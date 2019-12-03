@@ -194,6 +194,7 @@ section {
 }
 .nm_btn_show {
 	display: block;
+	z-index: 1;
 }
 .nm_arrow {
 	width: 100%;
@@ -245,7 +246,7 @@ nav.deepscroll {
 }
 .nm_head {
 	font-size: 2em;
-	margin: 0 0 0 1.5em;
+	margin: 0 0 0 1em;
 	padding-top: .1em;
 	text-decoration: none;
 	color: black;
@@ -1042,6 +1043,13 @@ nav.deepscroll {
 	}
 }
 
+/* ----- Responsive media query width 1200px ----- */
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+	.nm_menu ul li{
+		margin: 0 1em;
+	}
+}
+
 /* ----- Responsive media query width 1048px ----- */
 @media screen and (max-width: 1048px) and (min-width: 900px) and (min-height: 460px) {
 	.nm_width_cert {
@@ -1052,8 +1060,8 @@ nav.deepscroll {
 	}
 }
 
-/* ----- Responsive media query width 900px ----- */
-@media screen and (max-width: 918px) and (min-width: 769px) {
+/* ----- Responsive media query width 1000px ----- */
+@media screen and (max-width: 1000px) and (min-width: 769px) {
 	.nm_abilities_center{
 		height: unset;
 	}
