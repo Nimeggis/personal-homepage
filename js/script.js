@@ -100,7 +100,8 @@ $(document).ready(function() {
   });
 });
 
-// LinkedIn
+/* ----- Deep Linking ----- */
+/* ----- LinkedIn ----- */
 function linkedIn(){
     if( (navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)) {
          window.open("voyager://in/niklas-meißner", '_blank');
@@ -111,10 +112,10 @@ function linkedIn(){
 	}
 }
 
-// Xing
+/* ----- Xing ----- */
 function xing(){
     if( (navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)) {
-         window.open("xing://profile/Niklas_Meissner6", '_blank');
+         window.open("https://www.xing.com/profile/Niklas_Meissner6", '_blank');
     } else if(navigator.platform.indexOf("Android") != -1) {
          window.open("intent://www.xing.com/profile/Niklas_Meissner6/#Intent;package=com.xing.android;scheme=https;end", '_blank');
 	} else {
@@ -122,7 +123,16 @@ function xing(){
 	}
 }
 
-// Facebook
+/* ----- Instagram ----- */
+function instagram(){
+    if( (navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1) || navigator.platform.indexOf("Android") != -1) {
+         window.open("https://m.instagram.com/nik.meissner/", '_blank');
+	} else {
+		window.open('https://www.instagram.com/nik.meissner/', '_blank');
+	}
+}
+
+/* ----- Facebook ----- */
 function facebook(){
     if( (navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1) || navigator.platform.indexOf("Android") != -1) {
          window.open("https://m.facebook.com/people/Niklas-Mei%C3%9Fner/100004537065246", '_blank');
