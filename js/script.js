@@ -158,7 +158,6 @@ function minimize() {
 
 /* ----- Responsive Navbar & Copyright ----- */
 window.onload = function() {
-	
 	/* ----- Dynamic Background ----- */
 	if (8 <= currentTime && currentTime < 20) {
 		document.getElementsByClassName("nm_wrapper")[0].style.backgroundImage = "url('img/colorDesk.jpg')";

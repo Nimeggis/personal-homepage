@@ -55,14 +55,12 @@ section {
 	color: #fff;
 	text-align: center;
 	overflow: hidden;
-	text-rendering: optimizeLegibility;
 }
 .nm_wrapper:before {
 	content: '';
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
-	margin-right: -0.25em;
 }
 .nm_wrapper:after {
 	content: '';
@@ -201,12 +199,15 @@ section {
 	height: 100%;
 }
 .nm_border_footer {
-	margin: 0 15px 15px 15px;
+	margin: 0 15px 0 15px;
 	border: 3px solid rgba(0,0,0,.15);
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 	box-shadow: 0px 10px 10px -10px rgba(75, 75, 75, 0.4);
 	border-top: 0px;
+}
+.nm_padding_footer{
+	height: 15px;
 }
 
 /* ----- Basic Nav ----- */
@@ -246,7 +247,7 @@ nav.deepscroll {
 }
 .nm_head {
 	font-size: 2em;
-	margin: 0 0 0 1em;
+	margin: 0 0 0 1.5em;
 	padding-top: .1em;
 	text-decoration: none;
 	color: black;
@@ -842,7 +843,10 @@ nav.deepscroll {
 		margin: 0 10px 0 10px;
 	}
 	.nm_border_footer {
-		margin: 0 10px 10px 10px;
+		margin: 0 10px 0 10px;
+	}
+	.nm_padding_footer{
+		height: 10px;
 	}
 	.nm_wrapper:after {
 		top: 10px;
@@ -940,7 +944,7 @@ nav.deepscroll {
 		font-size: 1.3em;
 	}
 	.nm_menu ul li a {
-		font-size: 1em;
+		font-size: 15px;
 	}
 	.nm_nav_png {
 		height: 2em;
@@ -1026,10 +1030,25 @@ nav.deepscroll {
 	}
 }
 
+/* ----- Responsive media query width 1400px ----- */
+@media screen and (max-width: 1500px) {
+	.nm_wrapper {
+		background-attachment: unset;
+	}
+}
+
 /* ----- Responsive media query width 1200px ----- */
 @media screen and (max-width: 1200px) {
 	.nm_width_about {
 		width: 25%; 
+	}
+	.nm_menu ul li a:hover {
+		font-weight: unset;
+	}
+}
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+	.nm_menu ul li {
+		margin: 0 1em;
 	}
 }
 
@@ -1043,13 +1062,6 @@ nav.deepscroll {
 	}
 }
 
-/* ----- Responsive media query width 1200px ----- */
-@media screen and (max-width: 1200px) and (min-width: 769px) {
-	.nm_menu ul li{
-		margin: 0 1em;
-	}
-}
-
 /* ----- Responsive media query width 1048px ----- */
 @media screen and (max-width: 1048px) and (min-width: 900px) and (min-height: 460px) {
 	.nm_width_cert {
@@ -1060,8 +1072,8 @@ nav.deepscroll {
 	}
 }
 
-/* ----- Responsive media query width 1000px ----- */
-@media screen and (max-width: 1000px) and (min-width: 769px) {
+/* ----- Responsive media query width 900px ----- */
+@media screen and (max-width: 918px) and (min-width: 769px) {
 	.nm_abilities_center{
 		height: unset;
 	}
