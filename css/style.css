@@ -111,7 +111,7 @@ section {
 }
 .nm_name {
 	font-size: 3.5em;
-	padding-left: .7em;
+	margin-left: .15em;
 }
 .nm_byline {
 	font-size: 1.5em;
