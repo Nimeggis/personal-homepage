@@ -158,6 +158,20 @@ function minimize() {
 
 /* ----- Responsive Navbar & Copyright ----- */
 window.onload = function() {
+	/* ----- IE bug fixes ----- */
+	if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true ))
+    {
+      $('.nm_abilities_center').addClass('nm_abilities_center_ie');
+	  $('.nm_abilities_right').addClass('nm_abilities_right_ie');
+	  $('.nm_wrapper').css('background-attachment','scroll');
+	  $('.nm_about_img').css('width','100%');
+	  $('.nm_about_img').css('height','auto');
+	  $('.nm_about_img_container').css('width','60%');
+	  $('.nm_head').css('font-weight','normal');
+	  $('.nm_head').css('font-size','1.7em');
+	  $('.nm_head').css('padding-top','0em');
+    } 
+	
 	/* ----- Dynamic Background ----- */
 	if (8 <= currentTime && currentTime < 20) {
 		document.getElementsByClassName("nm_wrapper")[0].style.backgroundImage = "url('img/colorDesk.jpg')";

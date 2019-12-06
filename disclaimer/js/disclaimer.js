@@ -27,7 +27,16 @@ $(document).ready(function() {
   });
 });
 
+/* ----- Fixes & Copyright ----- */
 window.onload = function() {
+	/* ----- IE bug fixes ----- */
+	if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true ))
+    {
+	  $('.nm_head').css('font-weight','normal');
+	  $('.nm_head').css('font-size','1.7em');
+	  $('.nm_head').css('padding-top','0em');
+    }
+	
 	/* ----- Onscroll ----- */
 	document.getElementById('nm_menu-btn').addEventListener('click', function () {
 		isClicked = !isClicked;

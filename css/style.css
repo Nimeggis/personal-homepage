@@ -481,6 +481,12 @@ nav.deepscroll {
 	grid-template-columns: 30fr 20fr 5fr 30fr 20fr;
 	grid-column-gap: 1em;
 }
+.nm_abilities_center_ie {
+	height: auto;
+}
+.nm_abilities_right_ie {
+	margin-top: -1.5em;
+}
 .nm_abilities_notop {
 	margin: auto;
 }
