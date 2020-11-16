@@ -103,11 +103,11 @@ $(document).ready(function() {
 /* ----- LinkedIn ----- */
 function linkedIn(){
     if( (navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1) || (navigator.platform.indexOf("iPad") != -1)) {
-         window.open("voyager://in/niklas-meißner", '_blank');
+         window.open("voyager://in/niklas-meissner", '_blank');
     } else if(navigator.platform.indexOf("Android") != -1) {
-         window.open("intent://www.linkedin.com/in/niklas-meißner/#Intent;package=com.linkedin.android;scheme=https;end", '_blank');
+         window.open("intent://www.linkedin.com/in/niklas-meissner/#Intent;package=com.linkedin.android;scheme=https;end", '_blank');
 	} else {
-		window.open('https://www.linkedin.com/in/niklas-meißner', '_blank');
+		window.open('https://www.linkedin.com/in/niklas-meissner', '_blank');
 	}
 }
 
