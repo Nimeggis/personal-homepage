@@ -1,0 +1,153 @@
+/* ----- Basic ----- */
+a {
+  color: #777;
+}
+section {
+  padding-top: 1em;
+}
+
+/* ----- CSS-Class ----- */
+/* ----- Disclaimer ----- */
+.nm_disclaimer_title h2 {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+#nm_disclaimer_headline {
+  padding: 1.5em 0 0 0;
+  text-align: center;
+  font-size: 3em;
+}
+.nm_disclaimer_box {
+  font-family: "Nunito", sans-serif;
+  margin: 5em auto auto auto;
+  width: 80%;
+  transition: all ease-in-out 0.2s;
+}
+.nm_mainWrapper {
+  position: fixed;
+  z-index: 2;
+}
+#nm_header_frame {
+  top: 10px;
+  position: fixed;
+}
+.nm_header_sticky {
+  top: unset;
+}
+.nm_border_main {
+  margin: 15px 15px 0 15px;
+  border-top: 3px solid rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.nm_disclaimer_box_content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  letter-spacing: 0.02em;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(75, 75, 75, 0.4);
+  transition: all ease-in-out 0.4s;
+}
+.nm_disclaimer_box_content h3 {
+  font-size: 1em;
+}
+.nm_disclaimer_box_content:hover {
+  box-shadow: 0px 0px 20px rgba(75, 75, 75, 0.8);
+  transition: all ease-in-out 0.2s;
+}
+.nm_disclaimer_box_text {
+  text-align: justify;
+}
+.nm_width_disclaimer {
+  width: 25%;
+}
+
+/* ----- Animation ----- */
+/* ----- Responsive media query width 768px ----- */
+@media only screen and (max-width: 768px) {
+  .nm_disclaimer_box {
+    width: 100%;
+    margin: 3em auto auto;
+  }
+  .nm_disclaimer_box_content {
+    line-height: 1.5em;
+  }
+  .nm_disclaimer_title h2 {
+    margin: 1.2em 0 0 0;
+    font-size: 1.5em;
+  }
+  #nm_disclaimer_headline {
+    padding: 1em 0 1em 0;
+    text-align: center;
+    font-size: 2em;
+  }
+  .nm_width_disclaimer {
+    width: 25%;
+  }
+  .nm_border_main {
+    margin: 10px 10px 0 10px;
+  }
+  .nm_border_footer {
+    margin: 0 10px 10px 10px;
+  }
+  nav {
+    margin-top: 5px;
+  }
+  .nm_disclaimer_box_content {
+    border-radius: 15px;
+  }
+}
+
+/* ----- Responsive media query width 456px height 460px ----- */
+@media screen and (max-width: 456px), screen and (max-height: 460px) {
+  .nm_disclaimer_title h2 {
+    margin: 1.2em 0 0 0;
+    font-size: 1.5em;
+  }
+  #nm_disclaimer_headline {
+    padding: 1em 0 1em 0;
+    text-align: center;
+    font-size: 2em;
+  }
+  .nm_width_disclaimer {
+    width: 25%;
+  }
+}
+
+/* ----- Responsive media query width 1200px ----- */
+@media screen and (max-width: 1200px) and (min-width: 1000px) and (min-height: 460px) {
+  .nm_width_disclaimer {
+    width: 20%;
+  }
+}
+
+/* ----- Responsive media query width 1000px ----- */
+@media screen and (max-width: 1000px) and (min-width: 768px) and (min-height: 460px) {
+  .nm_width_disclaimer {
+    width: 15%;
+  }
+}
+
+/* ----- Responsive media query width 600px ----- */
+@media screen and (max-width: 600px) and (min-width: 440px) {
+  .nm_width_disclaimer {
+    width: 20%;
+  }
+}
+
+/* ----- Responsive media query width 440px ----- */
+@media screen and (max-width: 440px) and (min-width: 370px) {
+  .nm_width_disclaimer {
+    width: 15%;
+  }
+}
+
+/* ----- Responsive media query width 370px ----- */
+@media screen and (max-width: 370px) and (min-width: 300px) {
+  .nm_width_disclaimer {
+    width: 10%;
+  }
+}
