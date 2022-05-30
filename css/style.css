@@ -443,6 +443,9 @@ nav.deepscroll {
 .nm_job_description {
   margin: 5px 0 5px 0;
 }
+.nm_job_addon {
+  margin: 10px 0 5px 0;
+}
 .nm_starting_text {
   color: #999;
 }
