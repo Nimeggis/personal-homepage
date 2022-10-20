@@ -1,7 +1,7 @@
 /* ----- Global Var ----- */
 var pos = 0;
 var turn = 0;
-var nm_byline = ['Computer Scientist', 'IT-Architect / Product Owner', 'Graduate Student', 'Located in Stuttgart'];
+var nm_byline = ['Computer Scientist', 'IT-Architect / Product Owner', 'Master of Science', 'Located in Stuttgart'];
 var speed = 200;
 var isClicked = false;
 var isScrolled = false;
