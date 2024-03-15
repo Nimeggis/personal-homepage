@@ -443,6 +443,62 @@ nav.deepscroll {
 .nm_job_description {
   margin: 5px 0 5px 0;
 }
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+#more4 {
+  display: none;
+}
+#more5 {
+  display: none;
+}
+#more6 {
+  display: none;
+}
+.nm_read-more {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #c0c0c0;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+  padding: 5px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.nm_read-more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.nm_read-more span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.nm_read-more:hover span {
+  padding-right: 25px;
+}
+
+.nm_read-more:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .nm_job_addon {
   margin: 10px 0 5px 0;
 }
@@ -473,7 +529,7 @@ nav.deepscroll {
 .nm_link {
   display: flex;
   color: #777;
-  margin: -0.3em 0 5px 0;
+  margin: 5px 0 5px 0;
 }
 .nm_link_icon {
   width: 20px;
