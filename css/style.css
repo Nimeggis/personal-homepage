@@ -464,13 +464,11 @@ nav.deepscroll {
 .nm_read-more {
   display: inline-block;
   border-radius: 4px;
-  background-color: #c0c0c0;
-  border: none;
+  border: 2px solid #c0c0c0;
   color: black;
   text-align: center;
-  font-size: 1em;
-  padding: 5px;
-  width: 130px;
+  font-size: .9em;
+  width: 115px;
   transition: all 0.5s;
   cursor: pointer;
 }
