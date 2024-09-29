@@ -145,6 +145,70 @@ function readMore6() {
 	}
 }
 
+function readMore7() {
+	var dots = document.getElementById("dots7");
+	var moreText = document.getElementById("more7");
+	var btnText = document.getElementById("read-more-button7");
+  
+	if (dots.style.display === "none") {
+	  dots.style.display = "inline";
+	  btnText.innerHTML = "Read more";
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btnText.innerHTML = "Read less";
+	  moreText.style.display = "inline";
+	}
+}
+
+function readMore8() {
+	var dots = document.getElementById("dots8");
+	var moreText = document.getElementById("more8");
+	var btnText = document.getElementById("read-more-button8");
+  
+	if (dots.style.display === "none") {
+	  dots.style.display = "inline";
+	  btnText.innerHTML = "Read more";
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btnText.innerHTML = "Read less";
+	  moreText.style.display = "inline";
+	}
+}
+
+function readMore9() {
+	var dots = document.getElementById("dots9");
+	var moreText = document.getElementById("more9");
+	var btnText = document.getElementById("read-more-button9");
+  
+	if (dots.style.display === "none") {
+	  dots.style.display = "inline";
+	  btnText.innerHTML = "Read more";
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btnText.innerHTML = "Read less";
+	  moreText.style.display = "inline";
+	}
+}
+
+function readMore10() {
+	var dots = document.getElementById("dots10");
+	var moreText = document.getElementById("more10");
+	var btnText = document.getElementById("read-more-button10");
+  
+	if (dots.style.display === "none") {
+	  dots.style.display = "inline";
+	  btnText.innerHTML = "Read more";
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btnText.innerHTML = "Read less";
+	  moreText.style.display = "inline";
+	}
+}
+
 /* ----- Scroll Navbar ----- */
 $(document).ready(function () {
 	$(window).scroll(function () {
