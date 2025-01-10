@@ -674,6 +674,45 @@ nav.deepscroll {
   font-weight: bold;
 }
 
+/* ----- Awards ----- */
+.nm_awards_title h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+#nm_awards_headline {
+  padding: 1.5em 0 0 0;
+  text-align: center;
+  font-size: 3em;
+}
+.nm_awards_center {
+  font-family: "Nunito", sans-serif;
+  width: 80%;
+  margin: 5em auto auto auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 49fr 2fr 49fr;
+  grid-column-gap: 4em;
+}
+.nm_awards_textbox {
+  width: 100%;
+  line-height: 1.5em;
+  text-align: left;
+}
+.nm_awards_middle {
+  width: 3px;
+  text-align: center;
+  background-color: #444;
+}
+.nm_award_name {
+  margin: 5px 0 0 0;
+  font-weight: bold;
+}
+.nm_award_title {
+  margin: 5px 0 5px 0;
+  font-weight: bold;
+}
+
 /* ----- About ----- */
 .nm_about_title h2 {
   text-align: center;
@@ -865,6 +904,11 @@ nav.deepscroll {
     text-align: center;
     font-size: 2em;
   }
+  #nm_awards_headline {
+    padding: 1em 0 1em 0;
+    text-align: center;
+    font-size: 2em;
+  }
   #nm_about_headline {
     padding: 1em 0 1em 0;
     text-align: center;
@@ -880,6 +924,10 @@ nav.deepscroll {
     font-size: 1.3em;
   }
   .nm_certifications_title h2 {
+    margin: 1.2em 0 0 0;
+    font-size: 1.3em;
+  }
+  .nm_awards_title h2 {
     margin: 1.2em 0 0 0;
     font-size: 1.3em;
   }
@@ -1018,6 +1066,29 @@ nav.deepscroll {
   }
   .nm_certifications_middle {
     grid-area: cert;
+    width: 3px;
+  }
+  .nm_awards_center {
+    width: 100%;
+    margin: 3em auto auto auto;
+    grid-column-gap: 8%;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr 99fr;
+    grid-template-areas:
+      "award info"
+      "award text";
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .nm_awards_textbox {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .nm_awards_info {
+    grid-area: info;
+  }
+  .nm_awards_middle {
+    grid-area: award;
     width: 3px;
   }
   .nm_abilities_languages_title h2 {
@@ -1167,6 +1238,11 @@ nav.deepscroll {
     text-align: center;
     font-size: 2em;
   }
+  #nm_awards_headline {
+    padding: 1em 0 1em 0;
+    text-align: center;
+    font-size: 2em;
+  }
   #nm_about_headline {
     padding: 1em 0 1em 0;
     text-align: center;
@@ -1182,6 +1258,10 @@ nav.deepscroll {
     font-size: 1.3em;
   }
   .nm_certifications_title h2 {
+    margin: 1.2em 0 0 0;
+    font-size: 1.3em;
+  }
+  .nm_awards_title h2 {
     margin: 1.2em 0 0 0;
     font-size: 1.3em;
   }
