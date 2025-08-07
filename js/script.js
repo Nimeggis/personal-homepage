@@ -1,7 +1,7 @@
 /* ----- Global Var ----- */
 var pos = 0;
 var turn = 0;
-var nm_byline = ['Computer Scientist', 'PhD Candidate', 'Master of Science', 'Microsoft Learn Student Ambassador', 'Located in Stuttgart'];
+var nm_byline = ['Computer Scientist', 'PhD Candidate', 'Master of Science (M.Sc.)', 'Microsoft Learn Student Ambassador', 'Research Assistant', 'Located in Stuttgart'];
 var speed = 200;
 var isClicked = false;
 var isScrolled = false;
@@ -48,166 +48,220 @@ function erase() {
 	}
 }
 
-/* ----- Read More ----- */
-function readMore1() {
-	var dots = document.getElementById("dots1");
-	var moreText = document.getElementById("more1");
-	var btnText = document.getElementById("read-more-button1");
+document.addEventListener("DOMContentLoaded", function () {
+	const sections = document.querySelectorAll("section[id]");
+	const navLinks = document.querySelectorAll(".nm_menu ul li a");
   
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
+	function setActiveLink() {
+	  let scrollPos = window.scrollY || document.documentElement.scrollTop;
+  
+	  sections.forEach((section) => {
+		const offsetTop = section.offsetTop - 100; // adjust if nav height differs
+		const offsetBottom = offsetTop + section.offsetHeight;
+  
+		if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+		  // Remove active from all
+		  navLinks.forEach((link) => link.classList.remove("active"));
+  
+		  // Add active to matching link
+		  const activeLink = document.querySelector(
+			`.nm_menu ul li a[href="#${section.id}"]`
+		  );
+		  if (activeLink) {
+			activeLink.classList.add("active");
+		  }
+		}
+	  });
 	}
-}
+  
+	window.addEventListener("scroll", setActiveLink);
+	setActiveLink(); // initial call
+  });
 
-function readMore2() {
-	var dots = document.getElementById("dots2");
-	var moreText = document.getElementById("more2");
-	var btnText = document.getElementById("read-more-button2");
+  // Show & Hide Professional Background
+  document.addEventListener("DOMContentLoaded", () => {
+	const jobs = document.querySelectorAll("#nm_professional-job-list .nm_job");
+	const showMoreBtn = document.getElementById("pbj-show-more-btn");
   
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
+	for (let i = 3; i < jobs.length; i++) {
+		jobs[i].classList.add("hidden");
 	}
-}
+  
+	const hiddenCount = jobs.length - 3;
+	showMoreBtn.textContent = `Show more Professional Background (${hiddenCount})`;
+	showMoreBtn.dataset.expanded = "false";
+  });
+  
+  function toggleProfessionalJobs() {
+	const jobs = document.querySelectorAll("#nm_professional-job-list .nm_job");
+	const showMoreBtn = document.getElementById("pbj-show-more-btn");
+	const expanded = showMoreBtn.dataset.expanded === "true";
+  
+	if (expanded) {
+	  for (let i = 3; i < jobs.length; i++) {
+		jobs[i].classList.add("hidden");
+	  }
+	  showMoreBtn.textContent = `Show more Professional Background (${jobs.length - 3})`;
+	  showMoreBtn.dataset.expanded = "false";
+  
+	  const section = document.getElementById("nm_prof");
+	  if (section) {
+		const topPosition = section.getBoundingClientRect().top + window.scrollY - 50;
+	  
+		window.scrollTo({
+		  top: topPosition,
+		  behavior: "smooth"
+		});
+	  }
+	} else {
+	  for (let i = 3; i < jobs.length; i++) {
+		jobs[i].classList.remove("hidden");
+	  }
+	  showMoreBtn.textContent = "Show less Professional Background";
+	  showMoreBtn.dataset.expanded = "true";
+	}  
+  }
 
-function readMore3() {
-	var dots = document.getElementById("dots3");
-	var moreText = document.getElementById("more3");
-	var btnText = document.getElementById("read-more-button3");
+// Show & Hide Academic Background
+  document.addEventListener("DOMContentLoaded", () => {
+	const academicJobs = document.querySelectorAll("#nm_academic-job-list .nm_academic");
+	const showMoreBtn = document.getElementById("abj-show-more-btn");
   
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
+	for (let i = 3; i < academicJobs.length; i++) {
+		academicJobs[i].classList.add("hidden");
 	}
-}
+  
+	const hiddenCount = academicJobs.length - 3;
+	showMoreBtn.textContent = `Show more Academic Background (${hiddenCount})`;
+	showMoreBtn.dataset.expanded = "false";
+  });
+  
+  function toggleAcademicJobs() {
+	const academicJobs = document.querySelectorAll("#nm_academic-job-list .nm_academic");
+	const showMoreBtn = document.getElementById("abj-show-more-btn");
+	const expanded = showMoreBtn.dataset.expanded === "true";
+  
+	if (expanded) {
+	  for (let i = 3; i < academicJobs.length; i++) {
+		academicJobs[i].classList.add("hidden");
+	  }
+	  showMoreBtn.textContent = `Show more Academic Background (${academicJobs.length - 3})`;
+	  showMoreBtn.dataset.expanded = "false";
+  
+	  const section = document.getElementById("nm_academic");
+	  if (section) {
+		const topPosition = section.getBoundingClientRect().top + window.scrollY - 30;
+	  
+		window.scrollTo({
+		  top: topPosition,
+		  behavior: "smooth"
+		});
+	  }
+	} else {
+	  for (let i = 3; i < academicJobs.length; i++) {
+		academicJobs[i].classList.remove("hidden");
+	  }
+	  showMoreBtn.textContent = "Show less Academic Background";
+	  showMoreBtn.dataset.expanded = "true";
+	}  
+  }
 
-function readMore4() {
-	var dots = document.getElementById("dots4");
-	var moreText = document.getElementById("more4");
-	var btnText = document.getElementById("read-more-button4");
-  
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
-	}
-}
+// Show & Hide Publications
+document.addEventListener("DOMContentLoaded", () => {
+	const publications = document.querySelectorAll("#nm_publication_list .nm_publication");
+	const showMoreBtn = document.getElementById("show-more-btn");
 
-function readMore5() {
-	var dots = document.getElementById("dots5");
-	var moreText = document.getElementById("more5");
-	var btnText = document.getElementById("read-more-button5");
-  
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
+	for (let i = 3; i < publications.length; i++) {
+	  publications[i].classList.add("hidden");
 	}
-}
+  
+	const hiddenCount = publications.length - 3;
+	showMoreBtn.textContent = `Show more Publications (${hiddenCount})`;
+	showMoreBtn.dataset.expanded = "false";
+  });
+  
+  function togglePublications() {
+	const publications = document.querySelectorAll("#nm_publication_list .nm_publication");
+	const showMoreBtn = document.getElementById("show-more-btn");
+	const expanded = showMoreBtn.dataset.expanded === "true";
+  
+	if (expanded) {
+	  for (let i = 3; i < publications.length; i++) {
+		publications[i].classList.add("hidden");
+	  }
+	  showMoreBtn.textContent = `Show more Publications (${publications.length - 3})`;
+	  showMoreBtn.dataset.expanded = "false";
+  
+	  const section = document.getElementById("nm_publications_section");
+	  if (section) {
+		const topPosition = section.getBoundingClientRect().top + window.scrollY - 30;
+	  
+		window.scrollTo({
+		  top: topPosition,
+		  behavior: "smooth"
+		});
+	  }
+	} else {
+	  for (let i = 3; i < publications.length; i++) {
+		publications[i].classList.remove("hidden");
+	  }
+	  showMoreBtn.textContent = "Show less Publications";
+	  showMoreBtn.dataset.expanded = "true";
+	}  
+  }
+  
+  // Show & Hide Abstract
+  document.addEventListener("DOMContentLoaded", () => {
+	document.querySelectorAll(".read-more-btn").forEach(button => {
+	  button.addEventListener("click", () => {
+		const paragraph = button.closest(".nm_cv_textbox").querySelector(".read-more-content");
+		if (paragraph) {
+		  const isHidden = paragraph.classList.contains("hidden");
+		  paragraph.classList.toggle("hidden");
+		  button.innerHTML = isHidden ? "<span>Read less</span>" : "<span>Read more</span>";
+		}
+	  });
+	});
+  });
 
-function readMore6() {
-	var dots = document.getElementById("dots6");
-	var moreText = document.getElementById("more6");
-	var btnText = document.getElementById("read-more-button6");
-  
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
-	}
-}
+// Show & Hide Certifications
+document.addEventListener("DOMContentLoaded", () => {
+	const certifications = document.querySelectorAll("#nm_certificate-list .nm_certificate");
+	const showMoreBtn = document.getElementById("cert-show-more-btn");
 
-function readMore7() {
-	var dots = document.getElementById("dots7");
-	var moreText = document.getElementById("more7");
-	var btnText = document.getElementById("read-more-button7");
-  
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
+	for (let i = 5; i < certifications.length; i++) {
+		certifications[i].classList.add("hidden");
 	}
-}
-
-function readMore8() {
-	var dots = document.getElementById("dots8");
-	var moreText = document.getElementById("more8");
-	var btnText = document.getElementById("read-more-button8");
   
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
-	}
-}
-
-function readMore9() {
-	var dots = document.getElementById("dots9");
-	var moreText = document.getElementById("more9");
-	var btnText = document.getElementById("read-more-button9");
+	const hiddenCount = certifications.length - 5;
+	showMoreBtn.textContent = `Show more Certifications (${hiddenCount})`;
+	showMoreBtn.dataset.expanded = "false";
+  });
   
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
-	}
-}
-
-function readMore10() {
-	var dots = document.getElementById("dots10");
-	var moreText = document.getElementById("more10");
-	var btnText = document.getElementById("read-more-button10");
+  function toggleCertifications() {
+	const certifications = document.querySelectorAll("#nm_certificate-list .nm_certificate");
+	const showMoreBtn = document.getElementById("cert-show-more-btn");
+	const expanded = showMoreBtn.dataset.expanded === "true";
   
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
+	if (expanded) {
+	  for (let i = 5; i < certifications.length; i++) {
+		certifications[i].classList.add("hidden");
+	  }
+	  showMoreBtn.textContent = `Show more Certifications (${certifications.length - 5})`;
+	  showMoreBtn.dataset.expanded = "false";
+  
+	  const section = document.getElementById("certifications");
+	  if (section) {
+		section.scrollIntoView({ behavior: "smooth", block: "start" });
+	  }
 	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
-	}
-}
+	  for (let i = 5; i < certifications.length; i++) {
+		certifications[i].classList.remove("hidden");
+	  }
+	  showMoreBtn.textContent = "Show less Certifications";
+	  showMoreBtn.dataset.expanded = "true";
+	}  
+  }
 
 /* ----- Scroll Navbar ----- */
 $(document).ready(function () {

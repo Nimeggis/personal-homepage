@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(../fonts/Nunito-VariableFont_wght.woff2) format('woff2');
+}
 /* ----- Basic ----- */
 html,
 body {
@@ -36,9 +40,8 @@ footer ul li {
 footer ul li a {
   color: #333333;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.3em;
-  text-transform: lowercase;
 }
 footer p img {
   width: 17px;
@@ -47,6 +50,12 @@ section {
   max-width: 1000px;
   margin: auto;
   padding: 2em;
+}
+.cv_subsection{
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em;
+  padding-top: 4em;
 }
 
 /* ----- CSS-Class ----- */
@@ -287,7 +296,7 @@ nav.deepscroll {
   color: black;
 }
 .nm_nav_bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 .nm_responsive {
   display: none;
@@ -384,13 +393,16 @@ nav.deepscroll {
   margin: 0 1.2em;
 }
 .nm_menu ul li a {
+  display: inline-block;
   text-decoration: none;
   color: #333333;
   font-size: 1.3em;
-  text-transform: lowercase;
+  transition: transform 0.3s ease, font-weight 0.3s ease;
 }
-.nm_menu ul li a:hover {
-  font-weight: bold;
+.nm_menu ul li a:hover,
+.nm_menu ul li a.active {
+  transform: scale(1.1);
+  font-weight: 600;
 }
 
 /* ----- CV ----- */
@@ -398,7 +410,7 @@ nav.deepscroll {
 .nm_cv_acad_title h2 {
   text-align: center;
   font-size: 1.7em;
-  font-weight: bold;
+  font-weight: 600;
 }
 #nm_cv_headline {
   padding: 1.5em 0 0 0;
@@ -426,11 +438,11 @@ nav.deepscroll {
 }
 .nm_company {
   margin: 5px 0 0 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 .nm_sub_company {
   margin: 0px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .nm_period {
   margin: 5px 0 5px 0;
@@ -438,76 +450,113 @@ nav.deepscroll {
 }
 .nm_job_title {
   margin: 5px 0 0 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 .nm_job_description {
   margin: 5px 0 5px 0;
 }
-#more1 {
+.nm_volunteer_description {
+  margin: 5px 0 5px 0;
+}
+.nm_publication.hidden {
   display: none;
 }
-#more2 {
+.nm_job.hidden {
   display: none;
 }
-#more3 {
+.nm_academic.hidden {
   display: none;
 }
-#more4 {
+.nm_certificate.hidden {
   display: none;
 }
-#more5 {
-  display: none;
-}
-#more6 {
-  display: none;
-}
-#more7 {
-  display: none;
-}
-#more8 {
-  display: none;
-}
-#more9 {
-  display: none;
-}
-#more10 {
-  display: none;
-}
-.nm_read-more {
-  display: inline-block;
+.pbj-button {
+  background-color: #6e6e6e;
+  color: white;
+  border: none;
   border-radius: 4px;
-  border: 2px solid #c0c0c0;
-  color: black;
-  text-align: center;
-  font-size: .9em;
-  width: 115px;
-  transition: all 0.5s;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 50px auto 0;
+  display: block;
 }
-
-.nm_read-more span {
+.pbj-button:hover {
+  background-color: #5a5a5a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.abj-button {
+  background-color: #6e6e6e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 50px auto 0;
+  display: block;
+}
+.abj-button:hover {
+  background-color: #5a5a5a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.mdc-button {
+  background-color: #6e6e6e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 50px auto 0;
+  display: block;
+}
+.mdc-button:hover {
+  background-color: #5a5a5a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.read-more-content.hidden {
+  display: none;
+}
+.read-more-btn {
   display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  margin-bottom: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #D5D5D5;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
 }
-
-.nm_read-more span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.read-more-btn:hover {
+  color: #fff;
+  background-color: #6e6e6e;
 }
-
-.nm_read-more:hover span {
-  padding-right: 25px;
+.cert-button {
+  background-color: #6e6e6e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 50px auto 0;
+  display: block;
 }
-
-.nm_read-more:hover span:after {
-  opacity: 1;
-  right: 0;
+.cert-button:hover {
+  background-color: #5a5a5a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .nm_job_addon {
   margin: 10px 0 5px 0;
@@ -534,7 +583,7 @@ nav.deepscroll {
   color: #777;
 }
 .nm_location_title:hover {
-  font-weight: bold;
+  font-weight: 600;
 }
 .nm_link {
   display: flex;
@@ -549,7 +598,7 @@ nav.deepscroll {
   color: #777;
 }
 .nm_link_title:hover {
-  font-weight: bold;
+  font-weight: 600;
 }
 .nm_link_path {
   text-decoration: none;
@@ -559,7 +608,7 @@ nav.deepscroll {
 .nm_abilities_title h2 {
   text-align: center;
   font-size: 1.7em;
-  font-weight: bold;
+  font-weight: 600;
 }
 #nm_abilities_headline {
   padding: 1.5em 0 0 0;
@@ -570,7 +619,7 @@ nav.deepscroll {
 .nm_abilities_tools_title h2 {
   text-align: center;
   font-size: 1.7em;
-  font-weight: bold;
+  font-weight: 600;
 }
 .nm_abilities_center {
   font-family: "Nunito", sans-serif;
@@ -604,11 +653,11 @@ nav.deepscroll {
 }
 .nm_experience_f {
   margin-right: 3px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .nm_experience_s {
   margin-right: 3px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .nm_language {
   margin: 0px;
@@ -635,7 +684,7 @@ nav.deepscroll {
 .nm_certifications_title h2 {
   text-align: center;
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 600;
 }
 #nm_certifications_headline {
   padding: 1.5em 0 0 0;
@@ -663,7 +712,7 @@ nav.deepscroll {
 }
 .nm_cert_name {
   margin: 5px 0 0 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 .nm_date {
   margin: 5px 0 5px 0;
@@ -671,19 +720,23 @@ nav.deepscroll {
 }
 .nm_cert_title {
   margin: 5px 0 5px 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* ----- Awards ----- */
 .nm_awards_title h2 {
   text-align: center;
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 600;
 }
 #nm_awards_headline {
   padding: 1.5em 0 0 0;
   text-align: center;
   font-size: 3em;
+}
+.nm_awards_name {
+  margin: 5px 0 0 0;
+  font-weight: 700;
 }
 .nm_awards_center {
   font-family: "Nunito", sans-serif;
@@ -706,18 +759,61 @@ nav.deepscroll {
 }
 .nm_award_name {
   margin: 5px 0 0 0;
-  font-weight: bold;
+  font-weight: 600;
 }
 .nm_award_title {
   margin: 5px 0 5px 0;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+/* ----- Volunteering ----- */
+.nm_volunteering_name {
+  margin: 5px 0 0 0;
+  font-weight: 700;
+}
+.nm_volunteering_title h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+}
+#nm_volunteering_headline {
+  padding: 1.5em 0 0 0;
+  text-align: center;
+  font-size: 3em;
+}
+.nm_volunteering_center {
+  font-family: "Nunito", sans-serif;
+  width: 80%;
+  margin: 5em auto auto auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 49fr 2fr 49fr;
+  grid-column-gap: 4em;
+}
+.nm_volunteering_textbox {
+  width: 100%;
+  line-height: 1.5em;
+  text-align: left;
+}
+.nm_volunteering_middle {
+  width: 3px;
+  text-align: center;
+  background-color: #444;
+}
+.nm_volunteering_name {
+  margin: 5px 0 0 0;
+  font-weight: 700;
+}
+.nm_volunteer_title {
+  margin: 5px 0 5px 0;
+  font-weight: 700;
 }
 
 /* ----- About ----- */
 .nm_about_title h2 {
   text-align: center;
   font-size: 1.7em;
-  font-weight: bold;
+  font-weight: 600;
 }
 #nm_about_headline {
   padding: 1.5em 0 0 0;
@@ -860,12 +956,14 @@ nav.deepscroll {
   .nm_menu {
     max-height: 0;
     opacity: 0;
+    width: 90%;
     overflow: hidden;
     transition: all ease-in-out 0.4s;
   }
   .nm_menu.active {
     max-height: 425px;
     opacity: 1;
+    width: 90%;
   }
   .nm_noblock {
     margin-block-start: 0em;
@@ -885,6 +983,11 @@ nav.deepscroll {
     margin-bottom: 1em;
   }
   section {
+    max-width: 90%;
+    margin: auto;
+    padding: 2em 0 2em 0;
+  }
+  .cv_subsection {
     max-width: 90%;
     margin: auto;
     padding: 2em 0 2em 0;
@@ -909,6 +1012,11 @@ nav.deepscroll {
     text-align: center;
     font-size: 2em;
   }
+  #nm_volunteering_headline {
+    padding: 1em 0 1em 0;
+    text-align: center;
+    font-size: 2em;
+  }
   #nm_about_headline {
     padding: 1em 0 1em 0;
     text-align: center;
@@ -928,6 +1036,10 @@ nav.deepscroll {
     font-size: 1.3em;
   }
   .nm_awards_title h2 {
+    margin: 1.2em 0 0 0;
+    font-size: 1.3em;
+  }
+  .nm_volunteering_title h2 {
     margin: 1.2em 0 0 0;
     font-size: 1.3em;
   }
@@ -1091,6 +1203,29 @@ nav.deepscroll {
     grid-area: award;
     width: 3px;
   }
+  .nm_volunteering_center {
+    width: 100%;
+    margin: 3em auto auto auto;
+    grid-column-gap: 8%;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr 99fr;
+    grid-template-areas:
+      "award info"
+      "award text";
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .nm_volunteering_textbox {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .nm_volunteering_info {
+    grid-area: info;
+  }
+  .nm_volunteering_middle {
+    grid-area: award;
+    width: 3px;
+  }
   .nm_abilities_languages_title h2 {
     margin: 1.2em 0 0 0;
     font-size: 1.3em;
@@ -1217,6 +1352,13 @@ nav.deepscroll {
   .nm_head {
     font-size: 1.3em;
   }
+  .deepscroll .nm_nav_content {
+    transition: visibility 0.2s ease-out;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  }
+  .nm_menu {
+    font-size: 1.3em;
+  }
   .nm_menu ul li a {
     font-size: 1em;
   }
@@ -1243,6 +1385,11 @@ nav.deepscroll {
     text-align: center;
     font-size: 2em;
   }
+  #nm_volunteering_headline {
+    padding: 1em 0 1em 0;
+    text-align: center;
+    font-size: 2em;
+  }
   #nm_about_headline {
     padding: 1em 0 1em 0;
     text-align: center;
@@ -1262,6 +1409,10 @@ nav.deepscroll {
     font-size: 1.3em;
   }
   .nm_awards_title h2 {
+    margin: 1.2em 0 0 0;
+    font-size: 1.3em;
+  }
+  .nm_volunteering_title h2 {
     margin: 1.2em 0 0 0;
     font-size: 1.3em;
   }
@@ -1331,9 +1482,6 @@ nav.deepscroll {
 @media screen and (max-width: 1200px) {
   .nm_width_about {
     width: 25%;
-  }
-  .nm_menu ul li a:hover {
-    font-weight: unset;
   }
 }
 

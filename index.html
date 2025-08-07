@@ -20,9 +20,6 @@
 		<link rel="apple-touch-icon" href="img/favicon.png" type="image/png" />
 		<link rel="mask-icon" href="img/favicon.png" type="image/png"/>
 		<link rel="alternate icon" href="img/favicon.png" type="image/png"/>
-
-		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
 		
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -51,7 +48,7 @@
 		</header>
 		
 		<!-- Content -->
-		<main id="cv">
+		<main id="nm_main">
 			<div class="nm_border_main">
 				<!-- Navbar -->
 				<div class="nm_mainWrapper">
@@ -67,10 +64,12 @@
 							</div>
 							<div class="nm_menu">
 								<ul class="nm_noblock">
-									<li onclick="minimize()"><a href="#cv">curriculum vitae</a></li>
-									<li onclick="minimize()"><a href="#abilities">abilities</a></li>
-									<li onclick="minimize()"><a href="#certifications">certifications</a></li>
-									<li onclick="minimize()"><a href="#about">about</a></li>
+									<li onclick="minimize()"><a href="#cv">CV</a></li>
+									<!--<li onclick="minimize()"><a href="#abilities">abilities</a></li>-->
+									<li onclick="minimize()"><a href="#certifications">Certifications</a></li>
+									<li onclick="minimize()"><a href="#awards">Awards</a></li>
+									<li onclick="minimize()"><a href="#volunteering">Volunteering</a></li>
+									<li onclick="minimize()"><a href="#about">About</a></li>
 								</ul>
 							</div>
 						</nav>
@@ -84,373 +83,579 @@
 				
 				<!-- CV -->
 				<!-- Professional Background -->
-				<section class="nm_cv_prof_title">
+				<section class="nm_cv_prof_title" id="cv">
 					<div>
 						<div class="nm_topic_line_left nm_width_cv"></div>
 						<div class="nm_topic_line_right nm_width_cv"></div>
 						<h2 id="nm_cv_headline">CV</h2>
 					</div>
-					<h2>Professional Background</h2>
-					<!-- Research Assistent -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">University of Stuttgart</p>
-							<p class="nm_period">January 2023 - Present</p>
+					<div id="nm_prof" class="cv_subsection">
+						<h2>Professional Background</h2>
+						<div id="nm_professional-job-list">
+							<!-- Research Assistent -->
+							<div class="nm_job">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">University of Stuttgart</p>
+										<p class="nm_period">January 2023 - Present</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Research Assistent at the Institute of Software Engineering, Dept. Software Quality and Architecture</p>
+										<p class="nm_job_description">I have started a PhD program at the University of Stuttgart and work full-time at the Institute of Software Engineering. My research area is gamified e-learning platforms in higher education.</p>
+										<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/5fUyYT2tDGiPoAjG8" class="nm_link_path" target="_blank"><div class="nm_location_title">Stuttgart</div></a></div>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.uni-stuttgart.de/en/" class="nm_link_path" target="_blank"><div class="nm_link_title">www.uni-stuttgart.de</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Microsoft Learn Student Ambassador -->
+							<div class="nm_job">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">Microsoft</p>
+										<p class="nm_period">January 2023 - Present</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Microsoft Learn Student Ambassador - Beta</p>
+										<p class="nm_job_description">I participate in the Microsoft Learn Student Ambassador program, where I provide technical training to students on Azure solutions and other Microsoft products, and host community-building events.</p>
+										<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><div class="nm_location_title">Remote (Stuttgart)</div></div>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://studentambassadors.microsoft.com/en-US" class="nm_link_path" target="_blank"><div class="nm_link_title">studentambassadors.microsoft.com</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- IT Arcitect #3-->
+							<div class="nm_job">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">T-Systems International GmbH</p>
+										<p class="nm_period">April 2021 - December 2022</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Part-time - IT Architect / Product Owner</p>
+										<p class="nm_job_description">I have been promoted to an IT Architect and am leaving the junior
+											position behind. I also became the product owner of a new project, acting between the client
+											and the development team to drive the development of new software.</p>
+										<div class="nm_location"><img src="img/location.svg" class="nm_location_icon"
+												alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path"
+												target="_blank">
+												<div class="nm_location_title">Leinfelden-Echterdingen</div>
+											</a></div>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
+												href="https://www.t-systems.com/de/en/careers" class="nm_link_path" target="_blank">
+												<div class="nm_link_title">www.t-systems.com</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<!-- IT Arcitect #2-->
+							<div class="nm_job">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">T-Systems International GmbH</p>
+										<p class="nm_period">April 2020 - March 2021</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Part-time - Junior IT Architect</p>
+										<p class="nm_job_description">I have reduced my working time to focus on my master's studies, but continued working with my colleagues to develop customer-specific software and to keep the Application Management running.</p>
+										<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.t-systems.com/de/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.t-systems.com</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- IT Arcitect #1-->
+							<div class="nm_job">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">T-Systems International GmbH</p>
+										<p class="nm_period">November 2019 - March 2020</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Full-time - Junior IT Architect</p>
+										<p class="nm_job_description">Employed as an IT Architect, more working like a Scrum Master and Project Manager Support in an international, agile team with software developers all over Europe. I have to manage upcoming issues, deal with the customer needs and I'm responsible for a good working development team.</p>
+										<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.t-systems.com/de/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.t-systems.com</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Webdevelopment -->
+							<div class="nm_job">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">T-Systems International GmbH</p>
+										<p class="nm_sub_company">(employed at Deutsche Telekom AG)</p>
+										<p class="nm_period">March 2018 - October 2019</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Dual study - Web development</p>
+										<p class="nm_job_description">As a front-end developer I was part of a team which had to migrate the front-end from an old JSP web application to the JSF standard. Therefore, I designed and developed the new faces of the web application and was responsible for the responsive webdesign. In the absence of the project manager, I deputized him various times.</p>
+										<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.telekom.com/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.telekom.com</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Agile Team -->
+							<div class="nm_job">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">T-Systems International GmbH</p>
+										<p class="nm_sub_company">(employed at Deutsche Telekom AG)</p>
+										<p class="nm_period">February 2017 - February 2018</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Dual study - Agile development team</p>
+										<p class="nm_job_description">Together with a colleague, I founded an agile team of five students and we were responsible for needs of colleagues from all projects in the business area SAS (Sales and Aftersales). We chose Kanban as an agile framework to manage our tasks and to create transparency in the team.</p>
+										<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.telekom.com/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.telekom.com</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Architecture -->
+							<div class="nm_job">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">T-Systems International GmbH</p>
+										<p class="nm_sub_company">(employed at Deutsche Telekom AG)</p>
+										<p class="nm_period">October 2016 - January 2017</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Dual study - Software architecture</p>
+										<p class="nm_job_description">As a student I came into a project where I created UML diagrams and managed the Backlog Items in Siemens Polarion.</p>
+										<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.telekom.com/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.telekom.com</div></a></div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Research Assistent at the Institute of Software Engineering, Dept. Software Quality and Architecture</p>
-							<p class="nm_job_description">I have started a PhD program at the University of Stuttgart and work full-time at the Institute of Software Engineering. My research area is gamified e-learning platforms in higher education.</p>
-							<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/5fUyYT2tDGiPoAjG8" class="nm_link_path" target="_blank"><div class="nm_location_title">Stuttgart</div></a></div>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.uni-stuttgart.de/en/" class="nm_link_path" target="_blank"><div class="nm_link_title">www.uni-stuttgart.de</div></a></div>
-						</div>
+						<!-- Show More Button -->
+						<button id="pbj-show-more-btn" class="pbj-button" onclick="toggleProfessionalJobs()">
+							Show more Professional Background
+						</button>
 					</div>
-					<!-- Microsoft Learn Student Ambassador -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">Microsoft</p>
-							<p class="nm_period">January 2023 - Present</p>
+
+					<!-- Academic Background -->
+					<div class="nm_cv_acad_title cv_subsection" id="nm_academic">
+						<h2>Academic Background</h2>
+						<div id="nm_academic-job-list">
+							<!-- PhD -->
+							<div class="nm_academic">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">University of Stuttgart</p>
+										<p class="nm_period">January 2023 - Present</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">PhD Candidate - Software Engineering</p>
+										<p class="nm_job_description">PhD Candidate at the University of Stuttgart in Software Engineering</p>
+										<p class="nm_job_addon">Dissertation: Investigation of Adaptive Gamification in Intelligent Tutoring Systems for Software Engineering Education</p>
+										<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/5fUyYT2tDGiPoAjG8" class="nm_link_path" target="_blank"><div class="nm_location_title">Stuttgart</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Research Exchange -->
+							<div class="nm_academic">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">University of California, Irvine</p>
+										<p class="nm_period">January 2025 - April 2025</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Research Exchange on Software Engineering Education</p>
+										<p class="nm_job_description">Research scholar at the UC Irvine in Software Engineering Education</p>
+										<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon"
+												alt="Location_Icon"><a href="https://maps.app.goo.gl/8bk5ki5hs9RDp7iUA" class="nm_link_path"
+												target="_blank">
+												<div class="nm_location_title">Irvine, CA (USA)</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Master -->
+							<div class="nm_academic">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">University of Stuttgart</p>
+										<p class="nm_period">April 2020 - September 2022</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Master of Science (M.Sc.) - Software Engineering</p>
+										<p class="nm_job_description">Master study at the University of Stuttgart in Software Engineering</p>
+										<p class="nm_job_addon">Final grade: 1,2</p>
+										<p class="nm_job_addon">Master's thesis: Interdisciplinary Composition of E-Learning Platforms based on Reusable Low-Code Adapters</p>
+										<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/5fUyYT2tDGiPoAjG8" class="nm_link_path" target="_blank"><div class="nm_location_title">Stuttgart</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Study Abroad -->
+							<div class="nm_academic">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">University of Kansas (USA)</p>
+										<p class="nm_period">August 2021 - May 2022</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Graduate Direct Exchange (GDX) - Computer Science and Leadership</p>
+										<p class="nm_job_description">Study abroad program at the University of Kansas in Computer
+											Science and Leadership</p>
+										<p class="nm_job_addon">GPA: 4,0 (USA)</p>
+										<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon"
+												alt="Location_Icon"><a href="https://goo.gl/maps/8NGaxeLuFeC8Xkcy8" class="nm_link_path"
+												target="_blank">
+												<div class="nm_location_title">Lawrence, KS (USA)</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Bachelor -->
+							<div class="nm_academic">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">University of Telecommunications Leipzig</p>
+										<p class="nm_period">October 2016 - October 2019</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">Bachelor of Science (B.Sc.) - Applied Computer Science</p>
+										<p class="nm_job_description">Dual study at the University of Telecommunications Leipzig in Applied Computer Science in cooperation with Deutsche Telekom AG</p>
+										<p class="nm_job_addon">Final grade: 1,9</p>
+										<p class="nm_job_addon">Bachelor's thesis: Investigation and Evaluation of an Onshore/Offshore IDE solution (Eclipse) based on the IT4IT standard</p>
+										<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/hXS6JybdDbDwrqCy6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leipzig</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- High school -->
+							<div class="nm_academic">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">Lise-Meitner-Gymnasium Maxdorf</p>
+										<p class="nm_period">August 2008 - July 2016</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_title">High school graduation</p>
+										<p class="nm_job_description">High school graduation at Lise-Meitner-Gymnasium</p>
+										<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/hVQivvkRtjuEN3Zx6" class="nm_link_path" target="_blank"><div class="nm_location_title">Maxdorf</div></a></div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Microsoft Learn Student Ambassador - Beta</p>
-							<p class="nm_job_description">I participate in the Microsoft Learn Student Ambassador program, where I provide technical training to students on Azure solutions and other Microsoft products, and host community-building events.</p>
-							<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><div class="nm_location_title">Remote (Stuttgart)</div></div>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://studentambassadors.microsoft.com/en-US" class="nm_link_path" target="_blank"><div class="nm_link_title">www.studentambassadors.microsoft.com</div></a></div>
-						</div>
+						<!-- Show More Button -->
+						<button id="abj-show-more-btn" class="abj-button" onclick="toggleAcademicJobs()">
+							Show more Academic Background
+						</button>
 					</div>
-					<!-- IT Arcitect #3-->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">T-Systems International GmbH</p>
-							<p class="nm_period">April 2021 - December 2022</p>
+					
+					<!-- Publications -->
+					<div class="nm_cv_acad_title cv_subsection" id="nm_publications_section">
+						<h2>Publications</h2>
+						<div id="nm_publication_list">
+							<!-- Publication 13 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">Enhancing Motivation in Software Engineering Education through Gamified Agile Project-based Learning</p>
+										<p class="nm_period">June 2025</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Project-based learning (PBL), e.g., student software development projects, is an essential part of today's Software Engineering (SE) education. They allow students to work on real-world projects and gain practical experience as a team. However, several challenges arise in such projects, including learning new technologies and dealing with communication and coordination issues within the team. 
+											<span class="read-more-content hidden">
+												These factors can lead to a lack of motivation to contribute to the project and a decrease in productivity, potentially resulting in an insufficient project outcome. This paper aims to promote student motivation in PBL and increase team productivity by applying gamification. We conducted a user and requirements analysis to identify the needs of students and supervisors of such projects. Based on the insights, we designed and implemented DinoDev, a gamified project management tool that combines project management features with gamification elements. The DinoDev concept was evaluated in a student project, indicating increased motivation and team productivity. The findings are valuable for advancing research on using gamification in PBL and for lecturers to improve their students' motivation and team productivity in SE education.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1145/3696630.3727241" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 12 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">Empirical Study and Vision for a Holistic Serious Game Platform for Software Engineering Education</p>
+										<p class="nm_period">June 2025</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Serious games are becoming increasingly popular in universities to motivate students. Therefore, more and more lecturers are using game-based learning to encourage students to learn the subject matter. However, using serious games in Software Engineering (SE) lectures at universities is rather challenging as the subject is very practice-oriented and requires special kinds of tasks, e.g., practicing programming, software modeling, etc. 
+											<span class="read-more-content hidden"> 
+												Thus, building serious games and integrating such SE-specific tasks is a serious technical challenge and requires immense development effort. Therefore, before developing new games, students' preferences should be analyzed to increase the chances that these games will be played. To address this issue, we conducted an empirical study with 105 students to investigate the requirements and chances for using serious games in SE education in universities. Our analysis shows that students' preferences vary significantly and that there is no clear indication of a single game type that motivates all students equally. Therefore, our second contribution is a vision for a microservice-based Holistic Serious Game Platform for Software Engineering Education, which supports efficiently developing different serious games and integrating SE-specific mini-games and tasks. Hence, our empirical results and the presented approach support advancing research and development of serious SE games and also sensitize game developers to the needs of SE education.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1145/3696630.3727237" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 11 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">An Online Integrated Development Environment for Automated Programming Assessment Systems</p>
+										<p class="nm_period">April 2025</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											The increasing demand for programmers has led to a surge in participants in programming courses, making it increasingly challenging for instructors to assess student code manually. As a result, automated programming assessment systems (APASs) have been developed to streamline this process. These APASs support lecturers by managing and evaluating student programming exercises at scale. However, these tools often do not provide feature-rich online editors compared to their traditional integrated development environments (IDEs) counterparts. 
+											<span class="read-more-content hidden"> 
+												This absence of key features, such as syntax highlighting and autocompletion, can negatively impact the learning experience, as these tools are crucial for effective coding practice. To address this gap, this research contributes to the field of programming education by extracting and defining requirements for an online IDE in an educational context and presenting a prototypical implementation of an open-source solution for a scalable and secure onl ine IDE. The usability of the new online IDE was assessed using the Technology Acceptance Model (TAM), gathering feedback from 27 first-year students through a structured survey. In addition to these qualitative insights, quantitative measures such as memory (RAM) usage were evaluated to determine the efficiency and scalability of the tool under varying usage conditions.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.5220/0013203000003932" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 10 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">Enhanced Program Comprehension: Individualized Learning of Code Tracing with the Feedback Buddy</p>
+										<p class="nm_period">September 2024</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											The increasing importance of programming skills for various professions highlights the necessity of laying solid foundations for these skills in school. One critical step when learning programming is code tracing, i.e., the ability to analyze program code to predict the data changes when the code is executed. Considering the diverse levels of prior knowledge in computer science classes, it is essential to implement tailored teaching approaches, which can enhance the respective learning outcomes. 
+											<span class="read-more-content hidden"> 
+												To create personalized learning paths, we developed the tutoring system Feedback Buddy that teaches if-else branches, for loops, and combinations of them using tracing tables. Thereby, the Feedback Buddy adapts its feedback and task difficulty based on learners’ affective, cognitive, and metacognitive states. Extending former systems, our approach focuses on school education and uses growth mindset feedback. Evaluation with 10th grade students in computer science classes yielded positive results, affirming the usability and usefulness of the Feedback Buddy in secondary school education.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.18420/delfi2024_16" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 9 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">Automated Programming Exercise Generation in the Era of Large Language Models</p>
+										<p class="nm_period">July 2024</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Lecturers are increasingly attempting to use large language models (LLMs) to simplify and make the creation of exercises for students more efficient. Efforts are also being made to automate the exercise creation process in software engineering (SE) education. This study explores the use of advanced LLMs, including GPT-4 and LaMDA, for automated programming exercise creation in higher education and compares the results with related work using GPT-3.5-turbo. 
+											<span class="read-more-content hidden"> 
+												Utilizing applications such as ChatGPT, Bing AI Chat, and Google Bard, we identify LLMs capable of initiating different exercise designs. However, manual refinement is crucial for accuracy. Common error patterns across LLMs highlight challenges in complex programming concepts, while specific strengths in various topics showcase model distinctions. This research underscores LLMs' value in exercise generation, emphasizing the critical role of human supervision in refining these processes. Our concise insights cater to educators, practitioners, and other researchers seeking to enhance SE education through LLM applications.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1109/CSEET62301.2024.10662984" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 8 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">ChatGPT's Aptitude in Utilizing UML Diagrams for Software Engineering Exercise Generation</p>
+										<p class="nm_period">July 2024</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											The integration of Artificial Intelligence (AI) tech-nologies into educational settings has paved the way for inno-vative teaching and learning approaches. In Software Engineering (SE) education, using Unified Modeling Language (UML) diagrams is a fundamental teaching element for understanding complex software systems. This research addresses ChatGPT's ability to utilize UML class and sequence diagrams to create SE modeling exercises. 
+											<span class="read-more-content hidden"> 
+												We use ChatGPT to generate exercises based on the information from uploaded UML diagrams by analyzing textual UML representations such as Mermaid and graphical diagrams. The research explores ChatGPT's ability to synthesize UML-specific information from class and sequence diagrams, enabling the generation of various exercises tailored to strengthen conceptual understanding and practical application. Furthermore, we investigate generating graphical UML class and sequence diagrams based on natural language as input. By bridging the gap between AI -driven natural language understanding and the comprehension of UML diagrams, this study highlights the potential of ChatGPT to improve SE education. Our concise findings address educators, practitioners, and other researchers engaged in the field of SE education with a special focus on UML.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1109/CSEET62301.2024.10663027" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 7 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">State of Practice and Challenges of Issue Management for Component-based and Service-Oriented Systems: An Empirical Study</p>
+										<p class="nm_period">July 2024</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Modern software systems often consist of independently developed components, e.g., libraries or (micro-)services, that can be combined to form a larger architecture. Many of these components are developed externally, i.e., in other projects by other teams, which is particularly the case in service-oriented architectures. Even though the components are independently developed, bugs may arise that propagate along the call chains, which sometimes negatively affect the calling components.
+											<span class="read-more-content hidden"> 
+												However, as such components are typically managed in separate issue management systems (IMS), identifying that a downstream component is affected by an upstream component’s issues is complex and time-consuming. Even though some scientific works and IMS forums discuss how to manage such cross-component issues, there is no systematic study on the state of practice and the challenges of issue management when different components are affected. Therefore, this study aims to determine which types of components are usually included in modern software projects, how developers identify and manage issue propagation between components, and how often they face such propagations. To get these insights, we conducted an empirical study through a questionnaire with 64 industry experts and open-source contributors and interviewed seven of them. Our key takeaways help researchers and software engineers to understand possible impacts and to improve cross-component issue management. We identified, for example, that related issues currently are non-semantically linked via URLs in issue comments.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1109/SOSE62363.2024.00007" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 6 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">MEITREX - Gamified and Adaptive Intelligent Tutoring in Software Engineering Education</p>
+										<p class="nm_period">April 2024</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Nowadays, learning management systems (LMSs) are established tools in higher education, especially in the domain of software engineering (SE). However, the potential of such educational technologies has not been fully exploited, as student performance in SE education is still strongly dependent on feedback from time-constrained lecturers and tutors. 
+											<span class="read-more-content hidden"> 
+												Moreover, current LMSs are not designed for SE courses, as external SE tools are required to fulfill the requirements of lecturers such as programming and UML modeling features. Evolving these LMSs in the direction of intelligent tutoring could assist students in receiving automatic, individual feedback from the LMSs on their learning performance at any time. Also, gamified learning elements can serve to motivate students to engage with SE materials. Therefore, this paper presents an approach combining learning analytics, feedback, and interactive learning such as gamification in one LMS designed for SE education. The system could thus address diverse students with different backgrounds and motivational aspects and provide appropriate individual support to ensure effective SE education.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1145/3639478.3639804" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 5 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">Unveiling Hurdles in Software Engineering Education: The Role of Learning Management Systems</p>
+										<p class="nm_period">April 2024</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Learning management systems (LMSs) are established tools in higher education, especially in the field of software engineering~(SE). The onset of the COVID-19 pandemic further amplified the utilization of these systems, which necessitated their integration into educational curricula for both lecturers and students. 
+											<span class="read-more-content hidden">
+												However, adopting LMSs within SE education has presented distinctive challenges impeding their seamless incorporation into the courses. This paper aims to scrutinize the challenges and requirements encountered by professors, lecturers, and students in the domain of SE education when using LMSs. We conducted an empirical study that included (i) a survey with 47 professors/lecturers and 133 students, (ii) an analysis of the ensuing data, and (iii) 18 additional interviews conducted with professors and lecturers to delve into nuanced variations in viewpoints. The findings derived from our study reveal that the challenges and requirements pertaining to LMSs are rather specific depending on the scope and size of the respective courses. Nevertheless, many participants have a  consensus on numerous challenges and requirements for improving certain features of LMSs in order to improve their usage in SE education. The findings are valuable for advancing research and development in the field of LMSs and provide guidance for lecturers in SE education.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1145/3639474.3640060" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 4 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">EvalQuiz — LLM-based Automated Generation of Self-Assessment Quizzes in Software Engineering Education</p>
+										<p class="nm_period">February 2024</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Self-assessment quizzes after lectures, educational videos, or chapters are a commonly used method in software engineering (SE) education to allow students to test the knowledge they have gained. However, creating these quizzes is time-consuming, cognitively exhausting, and complex, as an expert in the field needs to create the quizzes and review the lecture material for validity. 
+											<span class="read-more-content hidden">
+												Therefore, this paper presents a concept to automatically generate self-assessment quizzes based on lecture material using a large language model (LLM) to reduce lecturers' workload and simplify the general quiz creation process. The developed prototype was handed to experts, who subsequently evaluated the approach. The results show that automatic quiz generation saves time, and the quizzes cover the delivered lecture material well. However, the generated quizzes often lack originality and versatility. Therefore, further prompt engineering might be required to achieve more elaborate results.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.18420/seuh2024_04" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 3 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">Investigating the Use of AI-Generated Exercises for Beginner and Intermediate Programming Courses: A ChatGPT Case Study</p>
+										<p class="nm_period">August 2023</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											In recent years, artificial intelligence (AI) has been increasingly used in education and supports teachers in creating educational material and students in their learning progress. AI-driven learning support has recently been further strengthened by the release of ChatGPT, in which users can retrieve explanations for various concepts in a few minutes through chat.
+											<span class="read-more-content hidden">
+												However, to what extent the use of AI models, such as ChatGPT, is suitable for the creation of didactically and content-wise good exercises for programming courses is not yet known. Therefore, in this paper, we investigate the use of AI-generated exercises for beginner and intermediate programming courses in higher education using ChatGPT. We created 12 exercise sheets with ChatGPT for a beginner to intermediate programming course focusing on the objects-first approach. We report our process, prompts, and experience using ChatGPT for this task and outline good practices we identified. The generated exercises are assessed and revised, primarily using ChatGPT, until they met the requirements of the programming course. We assessed the quality of these exercises by using them in our external teaching assignment course at the University of Education Ludwigsburg and let the students evaluate them. Results indicate the quality of the generated exercises and the time-saving for creating them using ChatGPT. However, our experience showed that while it is fast to generate a good version of an exercise, almost every exercise requires minor manual changes to improve its quality. 
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1109/CSEET58097.2023.00030" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 2 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">An Intelligent Tutoring System Concept for a Gamified e-Learning Platform for Higher Computer Science Education</p>
+										<p class="nm_period">February 2023</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Intelligent Tutoring Systems (ITSs) are increasingly used in modern education to automatically give students individual feedback on their performance. The advantage for students is fast individual feedback on their answers to asked questions, while lecturers benefit from considerable time savings and easy delivery of educational material. Of course, it is important that the provided feedback is as effective as direct feedback from the lecturer. 
+											<span class="read-more-content hidden">
+												However, in digital teaching, lecturers cannot assess the student's knowledge precisely but can only provide information on which questions were answered correctly and incorrectly. Therefore, this paper presents a concept for integrating ITS elements into the gamified e-learning platform IT-REX so that the feedback quality can be improved to support students in the best possible way.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.18420/seuh2023_10" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Publication 1 -->
+							<div class="nm_publication">
+								<div class="nm_cv_center">
+									<div class="nm_cv_textbox nm_cv_info">
+										<p class="nm_company">IT-REX - A Vision for a Gamified e-Learning Platform for the First Semesters of Computer Science Courses</p>
+										<p class="nm_period">February 2022</p>
+									</div>
+									<div class="nm_cv_textbox nm_cv_middle"></div>
+									<div class="nm_cv_textbox">
+										<p class="nm_job_description">
+											Digital learning is becoming increasingly important, especially in situations when students cannot attend presence lectures as we experienced during the Covid-19 pandemic. However, while there are platforms that support generic learning concepts such as multiple-choice questions, we believe that the first semesters of computer science courses can benefit from tailored learning platforms that support IT-specific learning.  For example, programming tasks that are automatically checked for correctness. 
+											<span class="read-more-content hidden">
+												Moreover, in times when students cannot meet each other, self-organization and motivation quickly become severe problems. Therefore, this paper presents a vision for a gamified e-Learning platform specialized for the first semesters of computer science courses.
+											</span>
+										</p>
+										<button class="read-more-btn">
+											<span>Read more</span>
+										</button>
+										<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.18420/SEUH2022_05" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Part-time - IT Architect / Product Owner</p>
-							<p class="nm_job_description">I have been promoted to an IT Architect and am leaving the junior
-								position behind. I also became the product owner of a new project, acting between the client
-								and the development team to drive the development of new software.</p>
-							<div class="nm_location"><img src="img/location.svg" class="nm_location_icon"
-									alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path"
-									target="_blank">
-									<div class="nm_location_title">Leinfelden-Echterdingen</div>
-								</a></div>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
-									href="https://www.t-systems.com/de/en/careers" class="nm_link_path" target="_blank">
-									<div class="nm_link_title">www.t-systems.com</div>
-								</a></div>
-						</div>
-					</div>
-					<!-- IT Arcitect #2-->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">T-Systems International GmbH</p>
-							<p class="nm_period">April 2020 - March 2021</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Part-time - Junior IT Architect</p>
-							<p class="nm_job_description">I have reduced my working time to focus on my master's studies, but continued working with my colleagues to develop customer-specific software and to keep the Application Management running.</p>
-							<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.t-systems.com/de/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.t-systems.com</div></a></div>
-						</div>
-					</div>
-					<!-- IT Arcitect #1-->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">T-Systems International GmbH</p>
-							<p class="nm_period">November 2019 - March 2020</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Full-time - Junior IT Architect</p>
-							<p class="nm_job_description">Employed as an IT Architect, more working like a Scrum Master and Project Manager Support in an international, agile team with software developers all over Europe. I have to manage upcoming issues, deal with the customer needs and I'm responsible for a good working development team.</p>
-							<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.t-systems.com/de/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.t-systems.com</div></a></div>
-						</div>
-					</div>
-					<!-- Webdevelopment -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">T-Systems International GmbH</p>
-							<p class="nm_sub_company">(employed at Deutsche Telekom AG)</p>
-							<p class="nm_period">March 2018 - October 2019</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Dual study - Web development</p>
-							<p class="nm_job_description">As a front-end developer I was part of a team which had to migrate the front-end from an old JSP web application to the JSF standard. Therefore, I designed and developed the new faces of the web application and was responsible for the responsive webdesign. In the absence of the project manager, I deputized him various times.</p>
-							<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.telekom.com/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.telekom.com</div></a></div>
-						</div>
-					</div>
-					<!-- Agile Team -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">T-Systems International GmbH</p>
-							<p class="nm_sub_company">(employed at Deutsche Telekom AG)</p>
-							<p class="nm_period">February 2017 - February 2018</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Dual study - Agile development team</p>
-							<p class="nm_job_description">Together with a colleague, I founded an agile team of five students and we were responsible for needs of colleagues from all projects in the business area SAS (Sales and Aftersales). We chose Kanban as an agile framework to manage our tasks and to create transparency in the team.</p>
-							<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.telekom.com/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.telekom.com</div></a></div>
-						</div>
-					</div>
-					<!-- Architecture -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">T-Systems International GmbH</p>
-							<p class="nm_sub_company">(employed at Deutsche Telekom AG)</p>
-							<p class="nm_period">October 2016 - January 2017</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Dual study - Software architecture</p>
-							<p class="nm_job_description">As a student I came into a project where I created UML diagrams and managed the Backlog Items in Siemens Polarion.</p>
-							<div class="nm_location"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/wcfQcqeNZm71UhNu6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leinfelden-Echterdingen</div></a></div>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.telekom.com/en/careers" class="nm_link_path" target="_blank"><div class="nm_link_title">www.telekom.com</div></a></div>
-						</div>
-					</div>
-				</section>
-				
-				<!-- Academic Background -->
-				<section class="nm_cv_acad_title">
-					<h2>Academic Background</h2>
-					<!-- PhD -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">University of Stuttgart</p>
-							<p class="nm_period">January 2023 - Present</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">PhD Candidate - Software Engineering</p>
-							<p class="nm_job_description">PhD Candidate at the University of Stuttgart in Software Engineering</p>
-							<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/5fUyYT2tDGiPoAjG8" class="nm_link_path" target="_blank"><div class="nm_location_title">Stuttgart</div></a></div>
-						</div>
-					</div>
-					<!-- Research Exchange -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">University of California, Irvine</p>
-							<p class="nm_period">January 2025 - April 2025</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Research Exchange on Gamification in Software Engineering Education</p>
-							<p class="nm_job_description">Research scholar at the UC Irvine in Software Engineering Education</p>
-							<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon"
-									alt="Location_Icon"><a href="https://maps.app.goo.gl/8bk5ki5hs9RDp7iUA" class="nm_link_path"
-									target="_blank">
-									<div class="nm_location_title">Irvine, CA (USA)</div>
-								</a></div>
-						</div>
-					</div>
-					<!-- Master -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">University of Stuttgart</p>
-							<p class="nm_period">April 2020 - September 2022</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Master of Science (M.Sc.) - Software Engineering</p>
-							<p class="nm_job_description">Master study at the University of Stuttgart in Software Engineering</p>
-							<p class="nm_job_addon">Final grade: 1,2</p>
-							<p class="nm_job_addon">Master's thesis: Interdisciplinary Composition of E-Learning Platforms based on Reusable Low-Code Adapters</p>
-							<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/5fUyYT2tDGiPoAjG8" class="nm_link_path" target="_blank"><div class="nm_location_title">Stuttgart</div></a></div>
-						</div>
-					</div>
-					<!-- Study Abroad -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">University of Kansas (USA)</p>
-							<p class="nm_period">August 2021 - May 2022</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Graduate Direct Exchange (GDX) - Computer Science and Leadership</p>
-							<p class="nm_job_description">Study abroad program at the University of Kansas in Computer
-								Science and Leadership</p>
-							<p class="nm_job_addon">GPA: 4,0 (USA)</p>
-							<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon"
-									alt="Location_Icon"><a href="https://goo.gl/maps/8NGaxeLuFeC8Xkcy8" class="nm_link_path"
-									target="_blank">
-									<div class="nm_location_title">Lawrence, KS (USA)</div>
-								</a></div>
-						</div>
-					</div>
-					<!-- Bachelor -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">University of Telecommunications Leipzig</p>
-							<p class="nm_period">October 2016 - October 2019</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">Bachelor of Science (B.Sc.) - Applied Computer Science</p>
-							<p class="nm_job_description">Dual study at the University of Telecommunications Leipzig in Applied Computer Science in cooperation with Deutsche Telekom AG</p>
-							<p class="nm_job_addon">Final grade: 1,9</p>
-							<p class="nm_job_addon">Bachelor's thesis: Investigation and Evaluation of an Onshore/Offshore IDE solution (Eclipse) based on the IT4IT standard</p>
-							<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/hXS6JybdDbDwrqCy6" class="nm_link_path" target="_blank"><div class="nm_location_title">Leipzig</div></a></div>
-						</div>
-					</div>
-					<!-- High school -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">Lise-Meitner-Gymnasium Maxdorf</p>
-							<p class="nm_period">August 2008 - July 2016</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_title">High school graduation</p>
-							<p class="nm_job_description">High school graduation at Lise-Meitner-Gymnasium</p>
-							<div class="nm_location_ac"><img src="img/location.svg" class="nm_location_icon" alt="Location_Icon"><a href="https://goo.gl/maps/hVQivvkRtjuEN3Zx6" class="nm_link_path" target="_blank"><div class="nm_location_title">Maxdorf</div></a></div>
-						</div>
-					</div>
-				</section>
-				
-				<!-- Publications -->
-				<section class="nm_cv_acad_title">
-					<h2>Publications</h2>
-					<!-- Publication 10 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">Enhanced Program Comprehension: Individualized Learning of Code Tracing with the Feedback Buddy</p>
-							<p class="nm_period">September 2024</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">The increasing importance of programming skills for various professions highlights the necessity of laying solid foundations for these skills in school. One critical step when learning programming is code tracing, i.e., the ability to analyze program code to predict the data changes when the code is executed. Considering the diverse levels of prior knowledge in computer science classes, it is essential to implement tailored teaching approaches, which can enhance the respective learning outcomes. <span id="dots10">... </span><span id="more10"> To create personalized learning paths, we developed the tutoring system Feedback Buddy that teaches if-else branches, for loops, and combinations of them using tracing tables. Thereby, the Feedback Buddy adapts its feedback and task difficulty based on learners’ affective, cognitive, and metacognitive states. Extending former systems, our approach focuses on school education and uses growth mindset feedback. Evaluation with 10th grade students in computer science classes yielded positive results, affirming the usability and usefulness of the Feedback Buddy in secondary school education.</span></p>
-							<button id="read-more-button10" class="nm_read-more" onclick="readMore10()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.18420/delfi2024_16" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 9 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">Automated Programming Exercise Generation in the Era of Large Language Models</p>
-							<p class="nm_period">July 2024</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">Lecturers are increasingly attempting to use large language models (LLMs) to simplify and make the creation of exercises for students more efficient. Efforts are also being made to automate the exercise creation process in software engineering (SE) education. This study explores the use of advanced LLMs, including GPT-4 and LaMDA, for automated programming exercise creation in higher education and compares the results with related work using GPT-3.5-turbo. <span id="dots9">... </span><span id="more9"> Utilizing applications such as ChatGPT, Bing AI Chat, and Google Bard, we identify LLMs capable of initiating different exercise designs. However, manual refinement is crucial for accuracy. Common error patterns across LLMs highlight challenges in complex programming concepts, while specific strengths in various topics showcase model distinctions. This research underscores LLMs' value in exercise generation, emphasizing the critical role of human supervision in refining these processes. Our concise insights cater to educators, practitioners, and other researchers seeking to enhance SE education through LLM applications.</span></p>
-							<button id="read-more-button9" class="nm_read-more" onclick="readMore9()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1109/CSEET62301.2024.10662984" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 8 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">ChatGPT's Aptitude in Utilizing UML Diagrams for Software Engineering Exercise Generation</p>
-							<p class="nm_period">July 2024</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">The integration of Artificial Intelligence (AI) tech-nologies into educational settings has paved the way for inno-vative teaching and learning approaches. In Software Engineering (SE) education, using Unified Modeling Language (UML) diagrams is a fundamental teaching element for understanding complex software systems. This research addresses ChatGPT's ability to utilize UML class and sequence diagrams to create SE modeling exercises. <span id="dots8">... </span><span id="more8"> We use ChatGPT to generate exercises based on the information from uploaded UML diagrams by analyzing textual UML representations such as Mermaid and graphical diagrams. The research explores ChatGPT's ability to synthesize UML-specific information from class and sequence diagrams, enabling the generation of various exercises tailored to strengthen conceptual understanding and practical application. Furthermore, we investigate generating graphical UML class and sequence diagrams based on natural language as input. By bridging the gap between AI -driven natural language understanding and the comprehension of UML diagrams, this study highlights the potential of ChatGPT to improve SE education. Our concise findings address educators, practitioners, and other researchers engaged in the field of SE education with a special focus on UML.</span></p>
-							<button id="read-more-button8" class="nm_read-more" onclick="readMore8()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1109/CSEET62301.2024.10663027" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 7 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">State of Practice and Challenges of Issue Management for Component-based and Service-Oriented Systems: An Empirical Study</p>
-							<p class="nm_period">July 2024</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">Modern software systems often consist of independently developed components, e.g., libraries or (micro-)services, that can be combined to form a larger architecture. Many of these components are developed externally, i.e., in other projects by other teams, which is particularly the case in service-oriented architectures. Even though the components are independently developed, bugs may arise that propagate along the call chains, which sometimes negatively affect the calling components. <span id="dots7">... </span><span id="more7"> However, as such components are typically managed in separate issue management systems (IMS), identifying that a downstream component is affected by an upstream component’s issues is complex and time-consuming. Even though some scientific works and IMS forums discuss how to manage such cross-component issues, there is no systematic study on the state of practice and the challenges of issue management when different components are affected. Therefore, this study aims to determine which types of components are usually included in modern software projects, how developers identify and manage issue propagation between components, and how often they face such propagations. To get these insights, we conducted an empirical study through a questionnaire with 64 industry experts and open-source contributors and interviewed seven of them. Our key takeaways help researchers and software engineers to understand possible impacts and to improve cross-component issue management. We identified, for example, that related issues currently are non-semantically linked via URLs in issue comments.</span></p>
-							<button id="read-more-button7" class="nm_read-more" onclick="readMore7()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1109/SOSE62363.2024.00007" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 6 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">MEITREX - Gamified and Adaptive Intelligent Tutoring in Software Engineering Education</p>
-							<p class="nm_period">April 2024</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">Nowadays, learning management systems (LMSs) are established tools in higher education, especially in the domain of software engineering (SE). However, the potential of such educational technologies has not been fully exploited, as student performance in SE education is still strongly dependent on feedback from time-constrained lecturers and tutors. <span id="dots6">... </span><span id="more6"> Moreover, current LMSs are not designed for SE courses, as external SE tools are required to fulfill the requirements of lecturers such as programming and UML modeling features. Evolving these LMSs in the direction of intelligent tutoring could assist students in receiving automatic, individual feedback from the LMSs on their learning performance at any time. Also, gamified learning elements can serve to motivate students to engage with SE materials. Therefore, this paper presents an approach combining learning analytics, feedback, and interactive learning such as gamification in one LMS designed for SE education. The system could thus address diverse students with different backgrounds and motivational aspects and provide appropriate individual support to ensure effective SE education.</span></p>
-							<button id="read-more-button6" class="nm_read-more" onclick="readMore6()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1145/3639478.3639804" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 5 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">Unveiling Hurdles in Software Engineering Education: The Role of Learning Management Systems</p>
-							<p class="nm_period">April 2024</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">Learning management systems (LMSs) are established tools in higher education, especially in the field of software engineering~(SE). The onset of the COVID-19 pandemic further amplified the utilization of these systems, which necessitated their integration into educational curricula for both lecturers and students. <span id="dots5">... </span><span id="more5"> However, adopting LMSs within SE education has presented distinctive challenges impeding their seamless incorporation into the courses. This paper aims to scrutinize the challenges and requirements encountered by professors, lecturers, and students in the domain of SE education when using LMSs. We conducted an empirical study that included (i) a survey with 47 professors/lecturers and 133 students, (ii) an analysis of the ensuing data, and (iii) 18 additional interviews conducted with professors and lecturers to delve into nuanced variations in viewpoints. The findings derived from our study reveal that the challenges and requirements pertaining to LMSs are rather specific depending on the scope and size of the respective courses. Nevertheless, many participants have a  consensus on numerous challenges and requirements for improving certain features of LMSs in order to improve their usage in SE education. The findings are valuable for advancing research and development in the field of LMSs and provide guidance for lecturers in SE education.</span></p>
-							<button id="read-more-button5" class="nm_read-more" onclick="readMore5()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1145/3639474.3640060" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 4 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">EvalQuiz — LLM-based Automated Generation of Self-Assessment Quizzes in Software Engineering Education</p>
-							<p class="nm_period">February 2024</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">Self-assessment quizzes after lectures, educational videos, or chapters are a commonly used method in software engineering (SE) education to allow students to test the knowledge they have gained. However, creating these quizzes is time-consuming, cognitively exhausting, and complex, as an expert in the field needs to create the quizzes and review the lecture material for validity. <span id="dots4">... </span><span id="more4"> Therefore, this paper presents a concept to automatically generate self-assessment quizzes based on lecture material using a large language model (LLM) to reduce lecturers' workload and simplify the general quiz creation process. The developed prototype was handed to experts, who subsequently evaluated the approach. The results show that automatic quiz generation saves time, and the quizzes cover the delivered lecture material well. However, the generated quizzes often lack originality and versatility. Therefore, further prompt engineering might be required to achieve more elaborate results.</span></p>
-							<button id="read-more-button4" class="nm_read-more" onclick="readMore4()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.18420/seuh2024_04" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 3 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">Investigating the Use of AI-Generated Exercises for Beginner and Intermediate Programming Courses: A ChatGPT Case Study</p>
-							<p class="nm_period">August 2023</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">In recent years, artificial intelligence (AI) has been increasingly used in education and supports teachers in creating educational material and students in their learning progress. AI-driven learning support has recently been further strengthened by the release of ChatGPT, in which users can retrieve explanations for various concepts in a few minutes through chat. <span id="dots3">... </span><span id="more3"> However, to what extent the use of AI models, such as ChatGPT, is suitable for the creation of didactically and content-wise good exercises for programming courses is not yet known. Therefore, in this paper, we investigate the use of AI-generated exercises for beginner and intermediate programming courses in higher education using ChatGPT. We created 12 exercise sheets with ChatGPT for a beginner to intermediate programming course focusing on the objects-first approach. We report our process, prompts, and experience using ChatGPT for this task and outline good practices we identified. The generated exercises are assessed and revised, primarily using ChatGPT, until they met the requirements of the programming course. We assessed the quality of these exercises by using them in our external teaching assignment course at the University of Education Ludwigsburg and let the students evaluate them. Results indicate the quality of the generated exercises and the time-saving for creating them using ChatGPT. However, our experience showed that while it is fast to generate a good version of an exercise, almost every exercise requires minor manual changes to improve its quality. </span></p>
-							<button id="read-more-button3" class="nm_read-more" onclick="readMore3()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.1109/CSEET58097.2023.00030" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 2 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">An Intelligent Tutoring System Concept for a Gamified e-Learning Platform for Higher Computer Science Education</p>
-							<p class="nm_period">February 2023</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">Intelligent Tutoring Systems (ITSs) are increasingly used in modern education to automatically give students individual feedback on their performance. The advantage for students is fast individual feedback on their answers to asked questions, while lecturers benefit from considerable time savings and easy delivery of educational material. Of course, it is important that the provided feedback is as effective as direct feedback from the lecturer. <span id="dots2">... </span><span id="more2"> However, in digital teaching, lecturers cannot assess the student’s knowledge precisely but can only provide information on which questions were answered correctly and incorrectly. Therefore, this paper presents a concept for integrating ITS elements into the gamified e-learning platform IT-REX so that the feedback quality can be improved to support students in the best possible way.</span></p>
-							<button id="read-more-button2" class="nm_read-more" onclick="readMore2()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.18420/seuh2023_10" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
-					</div>
-					<!-- Publication 1 -->
-					<div class="nm_cv_center">
-						<div class="nm_cv_textbox nm_cv_info">
-							<p class="nm_company">IT-REX - A Vision for a Gamified e-Learning Platform for the First Semesters of Computer Science Courses</p>
-							<p class="nm_period">February 2022</p>
-						</div>
-						<div class="nm_cv_textbox nm_cv_middle"></div>
-						<div class="nm_cv_textbox">
-							<p class="nm_job_description">Digital learning is becoming increasingly important, especially in situations when students cannot attend presence lectures as we experienced during the Covid-19 pandemic. However, while there are platforms that support generic learning concepts such as multiple-choice questions, we believe that the first semesters of computer science courses can benefit from tailored learning platforms that support IT-specific learning.  For example, programming tasks that are automatically checked for correctness. <span id="dots1">... </span><span id="more1"> Moreover, in times when students cannot meet each other, self-organization and motivation quickly become severe problems. Therefore, this paper presents a vision for a gamified e-Learning platform specialized for the first semesters of computer science courses.</span></p>
-							<button id="read-more-button1" class="nm_read-more" onclick="readMore1()" style="vertical-align:middle"><span>Read more </span></button>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://doi.org/10.18420/SEUH2022_05" class="nm_link_path" target="_blank"><div class="nm_link_title">Show Publication</div></a></div>
-						</div>
+						<!-- Show More Button -->
+						<button id="show-more-btn" class="mdc-button" onclick="togglePublications()">
+							Show more Publications
+						</button>
 					</div>
 				</section>
 
-				<!-- Abilities -->
-				<!-- Skills -->
+				<!-- Abilities 
+				-- Skills
 				<section class="nm_abilities_title nm_abilities_nobottom" id="abilities">
 					<div>
 						<div class="nm_topic_line_left nm_width_abilities"></div>
@@ -613,7 +818,7 @@
 					</div>
 				</section>
 				
-				<!-- Languages -->
+				-- Languages
 				<section class="nm_abilities_languages_title nm_abilities_nobottom">
 					<h2>Languages</h2>
 					<div class="nm_abilities_center">
@@ -641,7 +846,7 @@
 					</div>
 				</section>
 	
-				<!-- Tools -->
+				-- Tools
 				<section class="nm_abilities_tools_title nm_abilities_nobottom">
 					<h2>Tools</h2>
 					<div class="nm_abilities_center">
@@ -759,7 +964,7 @@
 							<img src="img/star_border.svg" class="nm_star" alt="Star_Icon">
 						</div>
 					</div>
-				</section>
+				</section> -->
 				
 				<!-- Certifications -->
 				<section class="nm_certifications_title" id="certifications">
@@ -768,91 +973,111 @@
 						<div class="nm_topic_line_right nm_width_cert"></div>
 						<h2 id="nm_certifications_headline">Certifications</h2>
 					</div>
-					<div class="nm_certifications_center">
-						<div class="nm_certifications_textbox nm_certifications_info">
-							<p class="nm_cert_name">AWS Certified: Cloud Practitioner</p>
-							<p class="nm_date">May 2021</p>
+					<div id="nm_certificate-list">
+						<div class="nm_certificate">
+							<div class="nm_certifications_center">
+								<div class="nm_certifications_textbox nm_certifications_info">
+									<p class="nm_cert_name">AWS Certified: Cloud Practitioner</p>
+									<p class="nm_date">May 2021</p>
+								</div>
+								<div class="nm_certifications_textbox nm_certifications_middle"></div>
+								<div class="nm_certifications_textbox">
+									<p class="nm_cert_title">AWS - Amazon Web Services</p>
+									<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
+											href="https://aws.amazon.com/certification/certified-cloud-practitioner/?nc1=h_ls"
+											class="nm_link_path" target="_blank">
+											<div class="nm_link_title">aws.amazon.com</div>
+										</a></div>
+								</div>
+							</div>
 						</div>
-						<div class="nm_certifications_textbox nm_certifications_middle"></div>
-						<div class="nm_certifications_textbox">
-							<p class="nm_cert_title">AWS - Amazon Web Services</p>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
-									href="https://aws.amazon.com/certification/certified-cloud-practitioner/?nc1=h_ls"
-									class="nm_link_path" target="_blank">
-									<div class="nm_link_title">aws.amazon.com</div>
-								</a></div>
+						<div class="nm_certificate">
+							<div class="nm_certifications_center">
+								<div class="nm_certifications_textbox nm_certifications_info">
+									<p class="nm_cert_name">Microsoft Certified: Azure Fundamentals</p>
+									<p class="nm_date">April 2021</p>
+								</div>
+								<div class="nm_certifications_textbox nm_certifications_middle"></div>
+								<div class="nm_certifications_textbox">
+									<p class="nm_cert_title">Microsoft</p>
+									<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
+											href="https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/"
+											class="nm_link_path" target="_blank">
+											<div class="nm_link_title">microsoft.com</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="nm_certificate">
+							<div class="nm_certifications_center">
+								<div class="nm_certifications_textbox nm_certifications_info">
+									<p class="nm_cert_name">Certified Professional for Software Architecture - Foundation Level (CPSA-F)</p>
+									<p class="nm_date">November 2020</p>
+								</div>
+								<div class="nm_certifications_textbox nm_certifications_middle"></div>
+								<div class="nm_certifications_textbox">
+									<p class="nm_cert_title">iSAQB - International Software Architecture Qualification Board</p>
+									<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.isaqb.org/certifications/" class="nm_link_path" target="_blank"><div class="nm_link_title">www.isaqb.org</div></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="nm_certificate">
+							<div class="nm_certifications_center">
+								<div class="nm_certifications_textbox nm_certifications_info">
+									<p class="nm_cert_name">Professional Scrum Master (PSM)</p>
+									<p class="nm_date">March 2019</p>
+								</div>
+								<div class="nm_certifications_textbox nm_certifications_middle"></div>
+								<div class="nm_certifications_textbox">
+									<p class="nm_cert_title">Scrum - Agile Framework</p>
+									<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.scrum.org/professional-scrum-master-i-certification" class="nm_link_path" target="_blank"><div class="nm_link_title">www.scrum.org</div></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="nm_certificate">
+							<div class="nm_certifications_center">
+								<div class="nm_certifications_textbox nm_certifications_info">
+									<p class="nm_cert_name">Professional Scrum Product Owner (PSPO)</p>
+									<p class="nm_date">February 2019</p>
+								</div>
+								<div class="nm_certifications_textbox nm_certifications_middle"></div>
+								<div class="nm_certifications_textbox">
+									<p class="nm_cert_title">Scrum - Agile Framework</p>
+									<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.scrum.org/professional-scrum-product-owner-i-certification" class="nm_link_path" target="_blank"><div class="nm_link_title">www.scrum.org</div></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="nm_certificate">
+							<div class="nm_certifications_center">
+								<div class="nm_certifications_textbox nm_certifications_info">
+									<p class="nm_cert_name">Certified Agile Requirements Specialist (CARS)</p>
+									<p class="nm_date">December 2018</p>
+								</div>
+								<div class="nm_certifications_textbox nm_certifications_middle"></div>
+								<div class="nm_certifications_textbox">
+									<p class="nm_cert_title">Agile Requirements</p>
+									<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="http://agile-requirements-institute.org/certified-agile-requirements-specialist.html" class="nm_link_path" target="_blank"><div class="nm_link_title">agile-requirements-institute.org</div></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="nm_certificate">
+							<div class="nm_certifications_center">
+								<div class="nm_certifications_textbox nm_certifications_info">
+									<p class="nm_cert_name">Global English – Virtual Classroom Learnlight Academy</p>
+									<p class="nm_date">May 2018</p>
+								</div>
+								<div class="nm_certifications_textbox nm_certifications_middle"></div>
+								<div class="nm_certifications_textbox">
+									<p class="nm_cert_title">Business English</p>
+									<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.learnlight.com/en/" class="nm_link_path" target="_blank"><div class="nm_link_title">www.learnlight.com</div></a></div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="nm_certifications_center">
-						<div class="nm_certifications_textbox nm_certifications_info">
-							<p class="nm_cert_name">Microsoft Certified: Azure Fundamentals</p>
-							<p class="nm_date">April 2021</p>
-						</div>
-						<div class="nm_certifications_textbox nm_certifications_middle"></div>
-						<div class="nm_certifications_textbox">
-							<p class="nm_cert_title">Microsoft</p>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
-									href="https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/"
-									class="nm_link_path" target="_blank">
-									<div class="nm_link_title">www.microsoft.com</div>
-								</a></div>
-						</div>
-					</div>
-					<div class="nm_certifications_center">
-						<div class="nm_certifications_textbox nm_certifications_info">
-							<p class="nm_cert_name">Certified Professional for Software Architecture - Foundation Level (CPSA-F)</p>
-							<p class="nm_date">November 2020</p>
-						</div>
-						<div class="nm_certifications_textbox nm_certifications_middle"></div>
-						<div class="nm_certifications_textbox">
-							<p class="nm_cert_title">iSAQB - International Software Architecture Qualification Board</p>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.isaqb.org/certifications/" class="nm_link_path" target="_blank"><div class="nm_link_title">www.isaqb.org</div></a></div>
-						</div>
-					</div>
-					<div class="nm_certifications_center">
-						<div class="nm_certifications_textbox nm_certifications_info">
-							<p class="nm_cert_name">Professional Scrum Master (PSM)</p>
-							<p class="nm_date">March 2019</p>
-						</div>
-						<div class="nm_certifications_textbox nm_certifications_middle"></div>
-						<div class="nm_certifications_textbox">
-							<p class="nm_cert_title">Scrum - Agile Framework</p>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.scrum.org/professional-scrum-master-i-certification" class="nm_link_path" target="_blank"><div class="nm_link_title">www.scrum.org</div></a></div>
-						</div>
-					</div>
-					<div class="nm_certifications_center">
-						<div class="nm_certifications_textbox nm_certifications_info">
-							<p class="nm_cert_name">Professional Scrum Product Owner (PSPO)</p>
-							<p class="nm_date">February 2019</p>
-						</div>
-						<div class="nm_certifications_textbox nm_certifications_middle"></div>
-						<div class="nm_certifications_textbox">
-							<p class="nm_cert_title">Scrum - Agile Framework</p>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.scrum.org/professional-scrum-product-owner-i-certification" class="nm_link_path" target="_blank"><div class="nm_link_title">www.scrum.org</div></a></div>
-						</div>
-					</div>
-					<div class="nm_certifications_center">
-						<div class="nm_certifications_textbox nm_certifications_info">
-							<p class="nm_cert_name">Certified Agile Requirements Specialist (CARS)</p>
-							<p class="nm_date">December 2018</p>
-						</div>
-						<div class="nm_certifications_textbox nm_certifications_middle"></div>
-						<div class="nm_certifications_textbox">
-							<p class="nm_cert_title">Agile Requirements</p>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="http://agile-requirements-institute.org/certified-agile-requirements-specialist.html" class="nm_link_path" target="_blank"><div class="nm_link_title">www.agile-requirements-institute.org</div></a></div>
-						</div>
-					</div>
-					<div class="nm_certifications_center">
-						<div class="nm_certifications_textbox nm_certifications_info">
-							<p class="nm_cert_name">Global English – Virtual Classroom Learnlight Academy</p>
-							<p class="nm_date">May 2018</p>
-						</div>
-						<div class="nm_certifications_textbox nm_certifications_middle"></div>
-						<div class="nm_certifications_textbox">
-							<p class="nm_cert_title">Business English</p>
-							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a href="https://www.learnlight.com/en/" class="nm_link_path" target="_blank"><div class="nm_link_title">www.learnlight.com</div></a></div>
-						</div>
-					</div>
+					<!-- Show More Button -->
+					<button id="cert-show-more-btn" class="cert-button" onclick="toggleCertifications()">
+						Show more Certifications
+					</button>
 				</section>
 				
 				<!-- Awards -->
@@ -864,17 +1089,77 @@
 					</div>
 					<div class="nm_awards_center">
 						<div class="nm_awards_textbox nm_awards_info">
-							<p class="nm_awards_name">DAAD - Research scholarship for doctoral candidates</p>
+							<p class="nm_awards_name">Deutscher Akademischer Austauschdienst e.V. (DAAD)</p>
 							<p class="nm_date">January 2025</p>
 						</div>
 						<div class="nm_awards_textbox nm_awards_middle"></div>
 						<div class="nm_awards_textbox">
-							<p class="nm_award_title">Deutscher Akademischer Austauschdienst e.V. (DAAD)</p>
+							<p class="nm_award_title">DAAD - Research scholarship for doctoral candidates</p>
 							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
 									href="https://www2.daad.de/ausland/studieren/stipendium/de/70-stipendien-finden-und-bewerben/?detail=57556279"
 									class="nm_link_path" target="_blank">
 									<div class="nm_link_title">www.daad.de</div>
 								</a></div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Volunteering -->
+				<section class="nm_volunteering_title" id="volunteering">
+					<div>
+						<div class="nm_topic_line_left nm_width_cert"></div>
+						<div class="nm_topic_line_right nm_width_cert"></div>
+						<h2 id="nm_volunteering_headline">Volunteering</h2>
+					</div>
+					<div class="nm_volunteering_center">
+						<div class="nm_volunteering_textbox nm_volunteering_info">
+							<p class="nm_volunteering_name">ACM Special Interest Group on Computer Science Education (SIGCSE TS)</p>
+							<p class="nm_date">July 2025 - Present</p>
+						</div>
+						<div class="nm_volunteering_textbox nm_volunteering_middle"></div>
+						<div class="nm_volunteering_textbox">
+							<p class="nm_volunteer_title">Committee Member in Program Committee</p>
+							<p class="nm_volunteer_description">I review scientific papers, experience reports, and tools and provide feedback to facilitate the international SIGCSE TS conference.</p>
+							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
+									href="https://sigcse2026.sigcse.org/"
+									class="nm_link_path" target="_blank">
+									<div class="nm_link_title">sigcse2026.sigcse.org</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="nm_volunteering_center">
+						<div class="nm_volunteering_textbox nm_volunteering_info">
+							<p class="nm_volunteering_name">IEEE Conference on Software Engineering Education and Training (CSEE&T)</p>
+							<p class="nm_date">December 2023 - Present</p>
+						</div>
+						<div class="nm_volunteering_textbox nm_volunteering_middle"></div>
+						<div class="nm_volunteering_textbox">
+							<p class="nm_volunteer_title">Committee Member in Program Committee</p>
+							<p class="nm_volunteer_description">I review scientific papers, experience reports, and tools and provide feedback to facilitate the international CSEE&T conference.</p>
+							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
+									href="https://conf.researchr.org/home/icse-2025/cseet-2025"
+									class="nm_link_path" target="_blank">
+									<div class="nm_link_title">conf.researchr.org</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="nm_volunteering_center">
+						<div class="nm_volunteering_textbox nm_volunteering_info">
+							<p class="nm_volunteering_name">UEFA EURO 2024</p>
+							<p class="nm_date">June 2024 - July 2024</p>
+						</div>
+						<div class="nm_volunteering_textbox nm_volunteering_middle"></div>
+						<div class="nm_volunteering_textbox">
+							<p class="nm_volunteer_title">EURO 2024 Volunteer - Stuttgart</p>
+							<p class="nm_volunteer_description">I was one of 16,000 volunteers who contributed to making the EURO 2024 in Germany a success.</p>
+							<div class="nm_link"><img src="img/link.svg" class="nm_link_icon" alt="Link_Icon"><a
+									href="https://volunteercommunity.uefa.com/"
+									class="nm_link_path" target="_blank">
+									<div class="nm_link_title">volunteercommunity.uefa.com</div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -907,7 +1192,7 @@
 									<h3>Location:</h3>
 									<p>Stuttgart, Germany</p>
 									<h3 class="nm_hobbies">Hobbies:</h3>
-									<p class="nm_align_left">Soccer, Fitness/Jogging, Cars, Technology</p>
+									<p class="nm_align_left">Soccer, Tennis, American Football, Cars, Technology</p>
 								</div>
 							</div>
 						</div>
