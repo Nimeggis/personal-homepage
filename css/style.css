@@ -417,25 +417,6 @@ nav.deepscroll {
   text-align: center;
   font-size: 3em;
 }
-.nm_cv_center {
-  font-family: "Nunito", sans-serif;
-  width: 80%;
-  margin: 5em auto auto auto;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 49fr 2fr 49fr;
-  grid-column-gap: 4em;
-}
-.nm_cv_textbox {
-  width: 100%;
-  line-height: 1.5em;
-  text-align: left;
-}
-.nm_cv_middle {
-  width: 3px;
-  text-align: center;
-  background-color: #444;
-}
 .nm_company {
   margin: 5px 0 0 0;
   font-weight: 700;
@@ -470,7 +451,11 @@ nav.deepscroll {
 .nm_certificate.hidden {
   display: none;
 }
-.pbj-button {
+/* Shared "show more" button style used by professional, academic, publications & certifications sections */
+.pbj-button,
+.abj-button,
+.mdc-button,
+.cert-button {
   background-color: #6e6e6e;
   color: white;
   border: none;
@@ -483,41 +468,10 @@ nav.deepscroll {
   margin: 50px auto 0;
   display: block;
 }
-.pbj-button:hover {
-  background-color: #5a5a5a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-.abj-button {
-  background-color: #6e6e6e;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  margin: 50px auto 0;
-  display: block;
-}
-.abj-button:hover {
-  background-color: #5a5a5a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-.mdc-button {
-  background-color: #6e6e6e;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  margin: 50px auto 0;
-  display: block;
-}
-.mdc-button:hover {
+.pbj-button:hover,
+.abj-button:hover,
+.mdc-button:hover,
+.cert-button:hover {
   background-color: #5a5a5a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -540,23 +494,6 @@ nav.deepscroll {
 .read-more-btn:hover {
   color: #fff;
   background-color: #6e6e6e;
-}
-.cert-button {
-  background-color: #6e6e6e;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  margin: 50px auto 0;
-  display: block;
-}
-.cert-button:hover {
-  background-color: #5a5a5a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .nm_job_addon {
   margin: 10px 0 5px 0;
@@ -691,7 +628,12 @@ nav.deepscroll {
   text-align: center;
   font-size: 3em;
 }
-.nm_certifications_center {
+
+/* Shared two-column grid layout used by CV, Certifications, Awards and Volunteering */
+.nm_cv_center,
+.nm_certifications_center,
+.nm_awards_center,
+.nm_volunteering_center {
   font-family: "Nunito", sans-serif;
   width: 80%;
   margin: 5em auto auto auto;
@@ -700,12 +642,22 @@ nav.deepscroll {
   grid-template-columns: 49fr 2fr 49fr;
   grid-column-gap: 4em;
 }
-.nm_certifications_textbox {
+
+/* Shared textbox style used by CV, Certifications, Awards and Volunteering */
+.nm_cv_textbox,
+.nm_certifications_textbox,
+.nm_awards_textbox,
+.nm_volunteering_textbox {
   width: 100%;
   line-height: 1.5em;
   text-align: left;
 }
-.nm_certifications_middle {
+
+/* Shared vertical divider used by CV, Certifications, Awards and Volunteering */
+.nm_cv_middle,
+.nm_certifications_middle,
+.nm_awards_middle,
+.nm_volunteering_middle {
   width: 3px;
   text-align: center;
   background-color: #444;
@@ -738,25 +690,6 @@ nav.deepscroll {
   margin: 5px 0 0 0;
   font-weight: 700;
 }
-.nm_awards_center {
-  font-family: "Nunito", sans-serif;
-  width: 80%;
-  margin: 5em auto auto auto;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 49fr 2fr 49fr;
-  grid-column-gap: 4em;
-}
-.nm_awards_textbox {
-  width: 100%;
-  line-height: 1.5em;
-  text-align: left;
-}
-.nm_awards_middle {
-  width: 3px;
-  text-align: center;
-  background-color: #444;
-}
 .nm_award_name {
   margin: 5px 0 0 0;
   font-weight: 600;
@@ -767,10 +700,6 @@ nav.deepscroll {
 }
 
 /* ----- Volunteering ----- */
-.nm_volunteering_name {
-  margin: 5px 0 0 0;
-  font-weight: 700;
-}
 .nm_volunteering_title h2 {
   text-align: center;
   font-size: 3em;
@@ -780,25 +709,6 @@ nav.deepscroll {
   padding: 1.5em 0 0 0;
   text-align: center;
   font-size: 3em;
-}
-.nm_volunteering_center {
-  font-family: "Nunito", sans-serif;
-  width: 80%;
-  margin: 5em auto auto auto;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 49fr 2fr 49fr;
-  grid-column-gap: 4em;
-}
-.nm_volunteering_textbox {
-  width: 100%;
-  line-height: 1.5em;
-  text-align: left;
-}
-.nm_volunteering_middle {
-  width: 3px;
-  text-align: center;
-  background-color: #444;
 }
 .nm_volunteering_name {
   margin: 5px 0 0 0;
