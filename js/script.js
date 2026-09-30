@@ -9,7 +9,7 @@ var isScrolled = false;
 /* =============================================
    Typewriter
    ============================================= */
-var nm_byline = ['Computer Scientist', 'PhD Candidate', 'Master of Science (M.Sc.)', 'Microsoft Learn Student Ambassador', 'Research Assistant', 'Located in Stuttgart'];
+var nm_byline = ['Computer Scientist', 'PhD Candidate', 'Building AI-powered Software', 'Master of Science (M.Sc.)', 'Microsoft Learn Student Ambassador', 'Research Assistant', 'Located in Stuttgart'];
 var speed = 200;
 
 setTimeout(typeWriter, 3000);

@@ -86,16 +86,52 @@ section {
 .nm_icon {
   position: absolute;
   left: 50%;
-  margin-left: -8em;
+  transform: translateX(-50%);
   width: 250px;
   height: 250px;
-  background-size: 100%;
-  background-image: url("../img/logo.png");
   z-index: 2;
-  -webkit-animation: slide-in-bck-center 1.5s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
-  animation: slide-in-bck-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s
-    both;
+  overflow: visible;
+}
+.nm_logo-stroke {
+  fill: none;
+  stroke: #1d1d1b;
+  stroke-width: 42;
+  stroke-linecap: round;
+  stroke-linejoin: miter;
+  stroke-dasharray: 1;
+  animation: nm-logo-draw 0.95s linear 0.1s both;
+}
+.nm_logo-stroke-m {
+  /* Continue from the right stem only after the N reaches it. */
+  animation-duration: 0.42s;
+  animation-delay: 1.05s;
+}
+.nm_logo-finish {
+  /* Static alternative only: the animated strokes must draw the complete mark. */
+  display: none;
+  fill: #1d1d1b;
+}
+.nm_logo-light {
+  opacity: 0;
+  animation: nm-logo-sheen 0.45s ease-in-out 1.5s both;
+}
+@keyframes nm-logo-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes nm-logo-sheen {
+  0% { transform: translateX(-90px); opacity: 0; }
+  20%, 70% { opacity: 1; }
+  100% { transform: translateX(280px); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nm_logo-stroke, .nm_logo-light {
+    animation: none;
+    display: none;
+  }
+  .nm_logo-finish {
+    display: inline;
+  }
 }
 
 /* ----- Animated circle ----- */
@@ -1219,7 +1255,6 @@ nav.deepscroll {
     margin-left: -0.3em;
   }
   .nm_icon {
-    margin-left: -5em;
     width: 150px;
     height: 150px;
   }
