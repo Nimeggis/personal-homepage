@@ -8,7 +8,7 @@ section {
 
 /* ----- CSS-Class ----- */
 /* ----- Data Protection ----- */
-.nm_dataprotection_title h2 {
+.nm_dataprotection_title h1 {
   font-family: "Nunito", sans-serif;
   text-align: center;
   font-size: 3em;
@@ -75,7 +75,7 @@ section {
   .nm_dataprotection_box_content {
     line-height: 1.5em;
   }
-  .nm_dataprotection_title h2 {
+  .nm_dataprotection_title h1 {
     margin: 1.2em 0 0 0;
     font-size: 1.5em;
   }
@@ -103,7 +103,7 @@ section {
 
 /* ----- Responsive media query width 456px height 460px ----- */
 @media screen and (max-width: 456px), screen and (max-height: 460px) {
-  .nm_dataprotection_title h2 {
+  .nm_dataprotection_title h1 {
     margin: 1.2em 0 0 0;
     font-size: 1.5em;
   }

@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Nunito";
   src: url(../fonts/Nunito-VariableFont_wght.woff2) format('woff2');
+  font-display: swap;
 }
 /* ----- Basic ----- */
 html,
@@ -122,37 +123,17 @@ section {
 .nm_foreground_max {
   display: none;
 }
-.nm_circle_icon {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  margin-left: 1em;
-  margin-top: -13em;
-  background-size: 100%;
-  z-index: 0;
-  background-image: url("../img/icon_transparent.png");
-  opacity: 0;
-  animation: icon-animation 5s normal forwards ease-in-out;
-}
-.nm_triangle-pattern {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  bottom: 0px;
-  left: 18px;
-  background-image: url("../img/triangles.png");
-  background-size: cover;
-  background-position: center;
-  /*background-attachment: fixed;*/
-  /*background-repeat: no-repeat;*/
-  opacity: 0.15;
-}
 .nm_headline {
   padding-top: 19em;
   animation: initial-hide 2s normal 0s ease-in-out;
 }
 .nm_name {
+  display: inline-block;
   font-size: 3em;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 0.15em;
 }
 .nm_byline {
@@ -735,7 +716,11 @@ nav.deepscroll {
   text-align: center;
   font-size: 3em;
 }
+#about {
+  max-width: 1280px;
+}
 .nm_about {
+  --about-image-width: 340px;
   font-family: "Nunito", sans-serif;
   width: 100%;
   margin: auto;
@@ -749,21 +734,23 @@ nav.deepscroll {
 }
 .nm_about_top_box {
   border-bottom: 3px solid #808080;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--about-image-width) minmax(0, 1fr);
 }
 .nm_about_sub_box {
   height: 4em;
-  display: flex;
-  flex-direction: row;
   border-radius: 0 0 30px 30px;
   background-color: #c0c0c0;
+}
+.nm_about_img_container {
+  min-width: 0;
+  overflow: hidden;
 }
 .nm_about_img {
   filter: grayscale(15%);
   border-bottom: 0px;
   height: 100%;
-  width: 300px;
+  width: 100%;
   border-left: 3px solid rgba(0, 0, 0, 0.15);
   border-right: 3px solid rgba(0, 0, 0, 0.15);
   object-fit: cover;
@@ -771,8 +758,8 @@ nav.deepscroll {
   transition: all ease-in-out 0.4s;
 }
 .nm_about_content_box {
-  width: 50%;
-  margin: 1em 1.5em 1.5em 1.5em;
+  min-width: 0;
+  margin: 1.5em 2em 2em;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -783,29 +770,37 @@ nav.deepscroll {
 }
 .nm_about_content_box p {
   margin: 0;
-  text-align: justify;
+  text-align: left;
+  line-height: 1.5;
 }
 .nm_hobbies {
   margin-bottom: 5px;
 }
 .nm_about_touch {
-  margin-left: 1em;
+  margin: 0;
+  text-align: center;
 }
 .nm_about_contact {
-  width: 85%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 100%;
+  padding: 0 2em;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--about-image-width) minmax(0, 1fr);
   align-items: center;
+  height: 100%;
 }
 .nm_about_contact a {
   margin: 0;
   height: 2em;
+  width: 2em;
+  flex: 0 0 2em;
 }
 .nm_about_icon {
   display: block;
   margin: auto;
   height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .nm_about_details {
   width: 100%;
@@ -817,11 +812,13 @@ nav.deepscroll {
   margin-top: -10px !important;
 }
 .nm_about_con {
-  width: 65%;
+  grid-column: 2;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 3em;
 }
 .nm_align_left {
   display: contents;
@@ -1034,6 +1031,7 @@ nav.deepscroll {
   }
   .nm_about_top_box {
     width: 100%;
+    display: flex;
     flex-direction: column;
   }
   .nm_about_img {
@@ -1066,11 +1064,6 @@ nav.deepscroll {
     top: 10px;
     right: 10px;
     left: 10px;
-  }
-  .nm_triangle-pattern {
-    top: 13px;
-    right: 13px;
-    left: 13px;
   }
   .nm_certifications_center {
     width: 100%;
@@ -1254,13 +1247,6 @@ nav.deepscroll {
     transition: all 2500ms ease;
     animation: border-animation-2 5s normal forwards ease-in-out;
   }
-  .nm_circle_icon {
-    width: 150px;
-    height: 150px;
-    margin-left: 0.4em;
-    margin-top: -9em;
-    animation: icon-animation-2 5s normal forwards ease-in-out;
-  }
   .nm_wrapper-inner {
     height: 250px;
   }
@@ -1401,12 +1387,13 @@ nav.deepscroll {
 }
 
 /* ----- Responsive media query width 1200px ----- */
-@media screen and (max-width: 1200px) and (min-width: 769px) {
+@media screen and (max-width: 1000px) and (min-width: 769px) {
   .nm_menu ul li {
     margin: 0 1em;
   }
   .nm_about_top_box {
     width: 100%;
+    display: flex;
     flex-direction: column;
   }
   .nm_about_content_box {
@@ -1417,7 +1404,8 @@ nav.deepscroll {
     border: 0px;
   }
   .nm_about {
-    width: 80%;
+    width: 100%;
+    --about-image-width: min(340px, 45vw);
   }
 }
 
@@ -1458,24 +1446,44 @@ nav.deepscroll {
   }
 }
 
-/* ----- Responsive media query width 650px ----- */
-@media screen and (max-width: 650px) {
+/* ----- Responsive About card ----- */
+@media screen and (max-width: 768px) {
+  #about {
+    padding-bottom: 1em;
+  }
+  .nm_about {
+    width: calc(100% - 2em);
+  }
   .nm_about_contact {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
+    padding: 0 1.5em;
+    gap: 1em;
   }
   .nm_about_con {
-    width: 94%;
-    margin-left: auto;
+    grid-column: auto;
+    width: 100%;
+    max-width: 20em;
+    margin: 0;
+    gap: 2.25em;
+    transform: translateY(-0.25em);
   }
   .nm_about_contact a {
     height: 2em;
   }
   .nm_about_sub_box {
-    height: 8em;
+    height: 6em;
   }
   .nm_about_touch {
     margin-left: 0px;
+  }
+  .nm_footer {
+    padding-top: 2em;
+  }
+  footer ul {
+    margin-top: 0;
   }
 }
 

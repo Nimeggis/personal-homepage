@@ -4,7 +4,7 @@
       "company": "University of Stuttgart",
       "period": "January 2023 – Present",
       "title": "Research Assistant at the Institute of Software Engineering, Dept. Software Quality and Architecture",
-      "description": "I have started a PhD program at the University of Stuttgart and work full-time at the Institute of Software Engineering. My research area is gamified e-learning platforms in higher education.",
+      "description": "I have started a PhD program at the University of Stuttgart and work full-time at the Institute of Software Engineering. My research area is LLM-based intelligent tutoring and adaptive gamification in software engineering education.",
       "location": "Stuttgart",
       "locationUrl": "https://goo.gl/maps/5fUyYT2tDGiPoAjG8",
       "link": "www.uni-stuttgart.de",
@@ -24,9 +24,9 @@
       "company": "Niklas Meißner IT & Web Solutions",
       "period": "June 2021 – Present",
       "title": "Founder & Freelance Web & E-Commerce Consultant",
-      "description": "Alongside my research, I build websites and e-commerce stores for small and medium-sized businesses, turning customer needs into tailored software solutions and guiding projects from planning through delivery.",
-      "location": "Stuttgart",
-      "locationUrl": "https://goo.gl/maps/5fUyYT2tDGiPoAjG8",
+      "description": "I build websites and e-commerce stores for small and medium-sized businesses, turning customer needs into tailored software solutions and guiding projects from planning through delivery.",
+      "location": "Remote (Stuttgart)",
+      "locationUrl": null,
       "link": "www.niklas-meissner.de",
       "linkUrl": "https://www.niklas-meissner.de/"
     },
@@ -102,7 +102,7 @@
       "title": "PhD Candidate – Software Engineering",
       "description": "PhD Candidate at the University of Stuttgart in Software Engineering",
       "addons": [
-        "Dissertation: Investigation of Adaptive Gamification in Intelligent Tutoring Systems for Software Engineering Education"
+        "Dissertation: Adaptive Gamification and LLM-based Intelligent Tutoring in Software Engineering Education"
       ],
       "location": "Stuttgart",
       "locationUrl": "https://goo.gl/maps/5fUyYT2tDGiPoAjG8"
@@ -362,36 +362,36 @@
 
   "volunteering": [
     {
-      "organization": "ICSE – International Conference on Software Engineering",
+      "organization": "IEEE/ACM International Conference on Software Engineering (ICSE)",
       "period": "September 2026 – Present",
       "title": "Committee Member in Program Committee – Software Engineering Education and Training (ICSE-SEET)",
       "description": "I review research contributions and provide feedback as a member of the ICSE-SEET program committee.",
       "link": "conf.researchr.org",
-      "linkUrl": "https://conf.researchr.org/track/icse-2027/icse-2027-software-engineering-education-and-training--seet-"
+      "linkUrl": "https://conf.researchr.org/profile/niklasmeissner"
     },
     {
-      "organization": "FSE – International Conference on the Foundations of Software Engineering",
+      "organization": "ACM International Conference on the Foundations of Software Engineering (FSE)",
       "period": "September 2026 – Present",
       "title": "Committee Member in Program Committee – Software Engineering Education and Training (FSE-SEET)",
       "description": "I review research contributions and provide feedback as a member of the FSE-SEET program committee.",
       "link": "conf.researchr.org",
-      "linkUrl": "https://conf.researchr.org/track/fse-2027/fse-2027-software-engineering-education"
+      "linkUrl": "https://conf.researchr.org/profile/niklasmeissner"
     },
     {
       "organization": "IEEE Conference on Software Engineering Education and Training (CSEE&T)",
       "period": "December 2023 – Present",
       "title": "Committee Member in Program Committee",
       "description": "I review scientific papers, experience reports, and tools and provide feedback to facilitate the international CSEE&T conference.",
-      "link": "cseet26.techconf.org",
-      "linkUrl": "https://cseet26.techconf.org/"
+      "link": "conf.researchr.org",
+      "linkUrl": "https://conf.researchr.org/profile/niklasmeissner"
     },
     {
       "organization": "ACM Special Interest Group on Computer Science Education (SIGCSE TS)",
       "period": "July 2025 – June 2026",
       "title": "Committee Member in Program Committee",
       "description": "I reviewed scientific papers, experience reports, and tools and provided feedback to facilitate the international SIGCSE TS conference.",
-      "link": "sigcse2026.sigcse.org",
-      "linkUrl": "https://sigcse2026.sigcse.org/"
+      "link": "conf.researchr.org",
+      "linkUrl": "https://conf.researchr.org/profile/niklasmeissner"
     },
     {
       "organization": "UEFA EURO 2024",

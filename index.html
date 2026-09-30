@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Basic -->
-		<!-- META -->
-		<title>Niklas Meißner</title>
+		<meta charset="UTF-8" />
+		<title>Niklas Meißner | Software Engineering &amp; AI Research</title>
+		<meta name="description" content="Niklas Meißner is a PhD candidate in Software Engineering researching LLM-based tutoring systems and building websites and e-commerce solutions in Stuttgart." />
+		<meta name="robots" content="index, follow, max-image-preview:large" />
+		<link rel="canonical" href="https://www.niklas-meissner.de/" />
 
-		<meta property="og:title" content="Niklas Meißner" />
-		<meta name="description" content="Personal Homepage of Niklas Meißner" />
-		<meta property="og:description" content="Personal Homepage of Niklas Meißner" />
+		<meta property="og:title" content="Niklas Meißner | Software Engineering &amp; AI Research" />
+		<meta property="og:description" content="PhD candidate researching LLM-based tutoring systems and building websites and e-commerce solutions in Stuttgart." />
 		<meta property="og:image" content="https://www.niklas-meissner.de/img/logo.png" />
-		<meta property="og:url" content="https://www.niklas-meissner.de" />
+		<meta property="og:image:width" content="1700" />
+		<meta property="og:image:height" content="1700" />
+		<meta property="og:image:alt" content="Niklas Meißner logo" />
+		<meta property="og:url" content="https://www.niklas-meissner.de/" />
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:locale:alternate" content="de_DE" />
+		<meta property="og:site_name" content="Niklas Meißner" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Niklas Meißner | Software Engineering &amp; AI Research" />
+		<meta name="twitter:description" content="PhD candidate researching LLM-based tutoring systems and building websites and e-commerce solutions in Stuttgart." />
+		<meta name="twitter:image" content="https://www.niklas-meissner.de/img/logo.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<link rel="icon" href="img/favicon.svg" type="image/svg"/>
-		<link rel="apple-touch-icon" href="img/favicon.png" type="image/png" />
-		<link rel="mask-icon" href="img/favicon.png" type="image/png"/>
-		<link rel="alternate icon" href="img/favicon.png" type="image/png"/>
+		<link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="img/favicon.png" type="image/png" sizes="500x500" />
+		<link rel="apple-touch-icon" href="img/favicon.png" />
+		<link rel="preload" href="fonts/Nunito-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin />
 		
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
 		<!-- JS -->
-		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/render.js"></script>
+		<script src="js/jquery-3.4.1.min.js" defer></script>
+		<script src="js/script.js" defer></script>
+		<script src="js/render.js" defer></script>
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Niklas Meißner",
+			"url": "https://www.niklas-meissner.de/",
+			"image": "https://www.niklas-meissner.de/img/niklas.jpg",
+			"jobTitle": "PhD Candidate in Software Engineering",
+			"worksFor": {
+				"@type": "CollegeOrUniversity",
+				"name": "University of Stuttgart",
+				"url": "https://www.uni-stuttgart.de/en/"
+			},
+			"sameAs": [
+				"https://www.linkedin.com/in/niklas-meissner",
+				"https://github.com/Nimeggis"
+			]
+		}
+		</script>
 	</head>
 	<body>
 		<!-- Landingpage -->
@@ -37,14 +62,14 @@
 					<div class="nm_wrapper-inner">
 						<div class="nm_icon"></div>
 						<div class="nm_headline">
-							<span id="nm_name" class="nm_name">Niklas Meißner</span>
-							</br>
+							<h1 id="nm_name" class="nm_name">Niklas Meißner</h1>
+							<br>
 							<span id="nm_byline" class="nm_byline"></span>
 							<span class='nm_type-cursor-byline'>|</span>
 						</div>
 					</div>
 				</div>
-				<div class="nm_mouse"><a href="#cv"><img src="img/mouse.png" alt="Mouse"></a></div>
+				<div class="nm_mouse"><a href="#cv" aria-label="Scroll to CV"><img src="img/mouse.png" alt="" width="170" height="280"></a></div>
 			</div>
 		</header>
 		
@@ -56,8 +81,8 @@
 					<div id="nm_header_frame">
 						<nav class="nm_nav">
 							<div class="nm_nav_content">
-								<a href="#welcome"><img class="nm_nav_png" src="img/logo.svg" alt="Icon" onclick="minimize()"></a>
-								<a class="nm_head">Niklas Meißner</a>
+								<a href="#welcome" aria-label="Back to the top"><img class="nm_nav_png" src="img/logo.svg" alt="Niklas Meißner logo" onclick="minimize()"></a>
+								<span class="nm_head">Niklas Meißner</span>
 								<div class="nm_responsive">
 									<input class="nm_menu-btn" type="checkbox" id="nm_menu-btn" />
 									<label class="nm_menu-icon" for="nm_menu-btn"><span class="nm_navicon"></span></label>
@@ -66,7 +91,6 @@
 							<div class="nm_menu">
 								<ul class="nm_noblock">
 									<li onclick="minimize()"><a href="#cv">CV</a></li>
-									<!--<li onclick="minimize()"><a href="#abilities">abilities</a></li>-->
 									<li onclick="minimize()"><a href="#certifications">Certifications</a></li>
 									<li onclick="minimize()"><a href="#awards">Awards</a></li>
 									<li onclick="minimize()"><a href="#volunteering">Volunteering</a></li>
@@ -79,7 +103,7 @@
 				
 				<!-- Back to Top -->
 				<div class="nm_btn_top">
-					<a href="#cv"><img src="img/arrow_top.svg" class="nm_arrow"></a>
+					<a href="#welcome" aria-label="Back to the top"><img src="img/arrow_top.svg" class="nm_arrow" alt=""></a>
 				</div>
 				
 				<!-- CV -->
@@ -159,7 +183,7 @@
 								</div>
 							</div>
 							<div class="nm_about_img_container">
-								<img class="nm_about_img" src="img/niklas.jpg" alt="That's me">
+								<img class="nm_about_img" src="img/niklas.jpg" alt="Portrait of Niklas Meißner" width="800" height="1200" loading="lazy" decoding="async">
 							</div>
 							<div class="nm_about_content_box">
 								<div class="nm_about_details">
@@ -179,9 +203,9 @@
 							<div class="nm_about_contact">
 								<h2 class="nm_about_touch">Get in touch!</h2>
 								<div class="nm_about_con">
-									<a href="mailto:niklas@niklas-meissner.de" target="_blank" title="E-Mail"><img src="img/mail_icon.png" alt="Mail Icon" class="nm_about_icon"></a>
-									<a onclick="linkedIn()" style="cursor: pointer" title="LinkedIn"><img src="img/linkedin_icon.svg" alt="LinkedIn Icon" class="nm_about_icon"></a>
-									<a href="https://github.com/Nimeggis" target="_blank" title="GitHub"><img src="img/github_icon.svg" alt="GitHub Icon" class="nm_about_icon"></a>
+									<a href="mailto:contact@niklas-meissner.de" title="Send Niklas an email"><img src="img/mail_icon.png" alt="Email" class="nm_about_icon" width="200" height="200"></a>
+									<a href="https://www.linkedin.com/in/niklas-meissner" target="_blank" rel="me noopener" title="Niklas on LinkedIn"><img src="img/linkedin_icon.svg" alt="LinkedIn" class="nm_about_icon"></a>
+									<a href="https://github.com/Nimeggis" target="_blank" rel="me noopener" title="Niklas on GitHub"><img src="img/github_icon.svg" alt="GitHub" class="nm_about_icon"></a>
 								</div>
 							</div>
 						</div>

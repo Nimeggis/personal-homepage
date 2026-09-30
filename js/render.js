@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Initialise collapsible lists AFTER content is in the DOM
       if (typeof initCollapsibleList === 'function') {
-        initCollapsibleList('#nm_professional-job-list', '.nm_job', 'pbj-show-more-btn', 'Professional Background', 3);
+        initCollapsibleList('#nm_professional-job-list', '.nm_job', 'pbj-show-more-btn', 'Professional Background', 4);
         initCollapsibleList('#nm_academic-job-list', '.nm_academic', 'abj-show-more-btn', 'Academic Background', 3);
         initCollapsibleList('#nm_publication_list', '.nm_publication', 'show-more-btn', 'Publications', 3);
         initCollapsibleList('#nm_certificate-list', '.nm_certificate', 'cert-show-more-btn', 'Certifications', 5);

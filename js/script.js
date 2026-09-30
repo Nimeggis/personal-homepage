@@ -94,7 +94,7 @@ function toggleCollapsibleList(listSelector, itemSelector, btnId, label, visible
 
 /* ----- Public toggle functions called from HTML ----- */
 function toggleProfessionalJobs() {
-	toggleCollapsibleList("#nm_professional-job-list", ".nm_job", "pbj-show-more-btn", "Professional Background", 3, "nm_prof", 50);
+	toggleCollapsibleList("#nm_professional-job-list", ".nm_job", "pbj-show-more-btn", "Professional Background", 4, "nm_prof", 50);
 }
 
 function toggleAcademicJobs() {
@@ -126,31 +126,6 @@ function toggleCertifications() {
 	} else {
 		btn.textContent = "Show less Certifications";
 		btn.dataset.expanded = "true";
-	}
-}
-
-/* =============================================
-   Deep Linking (Social Media)
-   ============================================= */
-function isMobile() {
-	return /iPhone|iPod|iPad|Android/.test(navigator.platform + navigator.userAgent);
-}
-
-function isIOS() {
-	return /iPhone|iPod|iPad/.test(navigator.platform);
-}
-
-function isAndroid() {
-	return navigator.platform.indexOf("Android") !== -1;
-}
-
-function linkedIn() {
-	if (isIOS()) {
-		window.open("voyager://in/niklas-meissner", '_blank');
-	} else if (isAndroid()) {
-		window.open("intent://www.linkedin.com/in/niklas-meissner/#Intent;package=com.linkedin.android;scheme=https;end", '_blank');
-	} else {
-		window.open('https://www.linkedin.com/in/niklas-meissner', '_blank');
 	}
 }
 
