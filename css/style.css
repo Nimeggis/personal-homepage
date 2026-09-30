@@ -99,6 +99,7 @@ section {
   stroke-linecap: round;
   stroke-linejoin: miter;
   stroke-dasharray: 1;
+  opacity: 0;
   animation: nm-logo-draw 0.95s linear 0.1s both;
 }
 .nm_logo-stroke-m {
@@ -116,8 +117,18 @@ section {
   animation: nm-logo-sheen 0.45s ease-in-out 1.5s both;
 }
 @keyframes nm-logo-draw {
-  from { stroke-dashoffset: 1; }
-  to { stroke-dashoffset: 0; }
+  0% {
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+  1% {
+    stroke-dashoffset: 0.99;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
 }
 @keyframes nm-logo-sheen {
   0% { transform: translateX(-90px); opacity: 0; }
@@ -806,7 +817,7 @@ nav.deepscroll {
 }
 .nm_about_content_box p {
   margin: 0;
-  text-align: left;
+  text-align: justify;
   line-height: 1.5;
 }
 .nm_hobbies {
