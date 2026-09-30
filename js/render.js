@@ -95,7 +95,7 @@ function renderPublications(publications) {
       + (pub.abstractMore
         ? '<button class="read-more-btn"><span>Read more</span></button>'
         : '')
-      + linkHTML('Show Publication', pub.doi);
+      + (pub.doi ? linkHTML('Show Publication', pub.doi) : '');
 
     return '<div class="nm_publication">' + twoColRow(left, right) + '</div>';
   }).join('');
@@ -155,11 +155,11 @@ function renderVolunteering(entries) {
       + '<p class="nm_volunteer_description">' + entry.description + '</p>'
       + linkHTML(entry.link, entry.linkUrl);
 
-    return '<div class="nm_volunteering_center">'
+    return '<div class="nm_volunteering"><div class="nm_volunteering_center">'
       + '<div class="nm_volunteering_textbox nm_volunteering_info">' + left + '</div>'
       + '<div class="nm_volunteering_textbox nm_volunteering_middle"></div>'
       + '<div class="nm_volunteering_textbox">' + right + '</div>'
-      + '</div>';
+      + '</div></div>';
   }).join('');
 }
 
@@ -207,6 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
         initCollapsibleList('#nm_academic-job-list', '.nm_academic', 'abj-show-more-btn', 'Academic Background', 3);
         initCollapsibleList('#nm_publication_list', '.nm_publication', 'show-more-btn', 'Publications', 3);
         initCollapsibleList('#nm_certificate-list', '.nm_certificate', 'cert-show-more-btn', 'Certifications', 5);
+        initCollapsibleList('#nm_volunteering_container', '.nm_volunteering', 'vol-show-more-btn', 'Volunteering', 3);
       }
     })
     .catch(function (err) {

@@ -21,6 +21,16 @@
       "linkUrl": "https://studentambassadors.microsoft.com/en-US"
     },
     {
+      "company": "Niklas Meißner IT & Web Solutions",
+      "period": "June 2021 – Present",
+      "title": "Founder & Freelance Web & E-Commerce Consultant",
+      "description": "Alongside my research, I build websites and e-commerce stores for small and medium-sized businesses, turning customer needs into tailored software solutions and guiding projects from planning through delivery.",
+      "location": "Stuttgart",
+      "locationUrl": "https://goo.gl/maps/5fUyYT2tDGiPoAjG8",
+      "link": "www.niklas-meissner.de",
+      "linkUrl": "https://www.niklas-meissner.de/"
+    },
+    {
       "company": "T-Systems International GmbH",
       "period": "April 2021 – December 2022",
       "title": "Part-time – IT Architect / Product Owner",
@@ -153,6 +163,41 @@
   ],
 
   "publications": [
+    {
+      "title": "Competence-Aware Retrieval-Augmented Generation for AI-Driven Tutoring in Software Engineering Education",
+      "date": "July 2026",
+      "abstract": "Artificial Intelligence (AI) driven tutoring is increasingly used in digital and hybrid Software Engineering (SE) education to provide real-time feedback and explanations to students without the need for human tutors. However, many current approaches rely on generic Large Language Models (LLMs) that are not sufficiently tailored to the course materials and do not adapt to students' individual competence levels and preferences. As a result, the responses may lack contextual relevance and pedagogical differentiation.",
+      "abstractMore": "In this paper, we present a competence-aware Retrieval-Augmented Generation (RAG) approach for AI-driven tutoring in SE education, grounded in a requirements analysis involving 34 students. Based on the identified requirements regarding trust, task support, and adaptive feedback, we developed a system that automatically processes course materials, such as analyzing lecture slides, documents, and videos, and enriches them through summarization, semantic tagging, and cross-material linking. The processed resources serve as a knowledge base for an AI-tutor capable of answering course-specific questions and referencing course material via semantic search. The AI-tutor adapts the depth and structure of explanations to the students' competence level, motivational preferences, and assessment conditions. We implemented the AI-tutor in MEITREX, an intelligent tutoring system for SE education, and evaluated it in a user study with 17 students using a dedicated SE course environment. The results show that reference-based responses contributed positively to perceived trust and usability, while competence-aware and proactive mechanisms revealed a need for further refinement. The findings highlight design aspects for integrating competence-aware RAG into SE education.",
+      "doi": null
+    },
+    {
+      "title": "Supporting Architecture-Level Resilience Analysis with an Integrated Chaos and Load Experimentation Framework",
+      "date": "June 2026",
+      "abstract": "Chaos Engineering (CE) and Software Performance Engineering (SPE) are increasingly important for validating the resilience and performance of cloud-native microservice systems. Yet, existing CE tools remain limited by environment-specific assumptions, narrow fault models, or substantial manual integration with load testing, resulting in high overhead, a high required level of technical expertise, and low reproducibility.",
+      "abstractMore": "To address these shortcomings, we present Ceres, a system-independent and infrastructure-agnostic framework that unifies configurable chaos injection, structured workload generation, and automated observability in a coordinated experimentation workflow. While the tool is independent of any specific system under test, we complement it with MiSArch, a realistic microservice reference architecture that enables reproducible evaluations and supports research on architectural resilience. We evaluate the tool through a usability study with researchers and industry engineers, as well as through empirical experiments using MiSArch that explore performance limits under varying load and failure scenarios and allow the derivation of initial service-level objective boundaries. The results demonstrate that the tool substantially reduces the effort required to design, execute, and analyze combined CE and SPE experiments. Researchers and DevOps engineers benefit from a reusable, accessible, and system-independent experimentation framework that lowers the barrier to systematic and reproducible resilience assessments.",
+      "doi": "https://doi.org/10.1109/ICSA66085.2026.00022"
+    },
+    {
+      "title": "Teamwork in Software Engineering Education: Exploring Team Dynamics and Challenges Across Course Projects",
+      "date": "April 2026",
+      "abstract": "Teamwork is a fundamental component of software engineering education. However, various persistent challenges (e.g., free riders, dominators, conflicts, and communication barriers) have been well-documented in the literature as hindering team effectiveness and student learning. While prior studies identify the presence of these challenges, they do not systematically explore how frequently they occur, how they correlate with one another, and what impact they have.",
+      "abstractMore": "In this paper, we report on a study of the challenges that students encountered in their previous team projects. Specifically, we introduce: (1) a survey we designed and administered across three capstone courses, (2) an analysis of the survey responses from 205 participants, (3) our findings on the frequency and co-occurrence of participation, contribution, collaboration challenges, their impacts on students and projects, and the role of team composition in shaping teamwork experience, and (4) a discussion of strategies to better support instructors in promoting effective student teamwork.",
+      "doi": "https://doi.org/10.1145/3786580.3786968"
+    },
+    {
+      "title": "Utilizing Adaptive Gamification in an Intelligent Tutoring System for Software Engineering Education",
+      "date": "April 2026",
+      "abstract": "Gamification is increasingly applied in Software Engineering (SE) education to enhance student motivation and engagement. However, existing approaches often follow a one-size-fits-all strategy, which fails to account for the diverse motivational profiles of students. This can result in limited effectiveness and disengagement. In this paper, we present an adaptive gamification concept for MEITREX, an intelligent tutoring system (ITS) in SE education that tailors gamification to students’ HEXAD player types, course progress, and competence level.",
+      "abstractMore": "We conducted a requirements and user analysis to identify motivational challenges and individual preferences in SE education, which guided the design of our concept. We developed and implemented the concept in MEITREX, integrating adaptive gamification elements with student analytics, and evaluated it with twelve students in a demo course. Results show that students perceived the system as adaptive to their learning, with quests and progress indicators improving orientation and motivation. At the same time, the effects on procrastination were moderate, indicating a need for additional time management tools. We present this study as a pilot, and we make the source code and collected data publicly available to facilitate replication and longer-term studies. The findings of our first evaluation in a demo course are relevant for researchers investigating personalized learning, educators aiming to improve SE education, and developers of learning technologies seeking to integrate adaptive gamification.",
+      "doi": "https://doi.org/10.1145/3786580.3786945"
+    },
+    {
+      "title": "Exploring gender as a determinant of game element effectiveness",
+      "date": "March 2026",
+      "abstract": "Student diversity, for example, in terms of gender, characterizes higher education learning settings and presents a challenge for optimally supporting all learners. Digital learning settings are increasingly employed to provide a personalized learning experience. To enhance motivation, game elements, such as points, badges, leaderboards, avatars, and feedback, are commonly used in these settings. However, their impact on performance and motivation appears to vary across genders, and empirical evidence on the effects of individual game elements remains limited.",
+      "abstractMore": "This study systematically examines gender differences in performance, motivation, self-efficacy, and anxiety in response to specific game elements. Therefore, participants solved logical problems in a digital learning setting featuring different combinations of game elements. Results reveal a significant gender difference in the influence of game elements on experienced external regulation, a dimension of motivation. Related research suggests that cultural factors and the learning context might shape gender differences, underscoring the importance of context-sensitive gamification design in digital learning settings.",
+      "doi": "https://doi.org/10.3389/fcomp.2026.1694621"
+    },
     {
       "title": "Boosting Student Motivation through Game-based Learning in Programming Education with Gamify-IT",
       "date": "February 2026",
@@ -317,20 +362,36 @@
 
   "volunteering": [
     {
-      "organization": "ACM Special Interest Group on Computer Science Education (SIGCSE TS)",
-      "period": "July 2025 – Present",
-      "title": "Committee Member in Program Committee",
-      "description": "I review scientific papers, experience reports, and tools and provide feedback to facilitate the international SIGCSE TS conference.",
-      "link": "sigcse2026.sigcse.org",
-      "linkUrl": "https://sigcse2026.sigcse.org/"
+      "organization": "ICSE – International Conference on Software Engineering",
+      "period": "September 2026 – Present",
+      "title": "Committee Member in Program Committee – Software Engineering Education and Training (ICSE-SEET)",
+      "description": "I review research contributions and provide feedback as a member of the ICSE-SEET program committee.",
+      "link": "conf.researchr.org",
+      "linkUrl": "https://conf.researchr.org/track/icse-2027/icse-2027-software-engineering-education-and-training--seet-"
+    },
+    {
+      "organization": "FSE – International Conference on the Foundations of Software Engineering",
+      "period": "September 2026 – Present",
+      "title": "Committee Member in Program Committee – Software Engineering Education and Training (FSE-SEET)",
+      "description": "I review research contributions and provide feedback as a member of the FSE-SEET program committee.",
+      "link": "conf.researchr.org",
+      "linkUrl": "https://conf.researchr.org/track/fse-2027/fse-2027-software-engineering-education"
     },
     {
       "organization": "IEEE Conference on Software Engineering Education and Training (CSEE&T)",
       "period": "December 2023 – Present",
       "title": "Committee Member in Program Committee",
       "description": "I review scientific papers, experience reports, and tools and provide feedback to facilitate the international CSEE&T conference.",
-      "link": "conf.researchr.org",
-      "linkUrl": "https://conf.researchr.org/home/icse-2025/cseet-2025"
+      "link": "cseet26.techconf.org",
+      "linkUrl": "https://cseet26.techconf.org/"
+    },
+    {
+      "organization": "ACM Special Interest Group on Computer Science Education (SIGCSE TS)",
+      "period": "July 2025 – June 2026",
+      "title": "Committee Member in Program Committee",
+      "description": "I reviewed scientific papers, experience reports, and tools and provided feedback to facilitate the international SIGCSE TS conference.",
+      "link": "sigcse2026.sigcse.org",
+      "linkUrl": "https://sigcse2026.sigcse.org/"
     },
     {
       "organization": "UEFA EURO 2024",

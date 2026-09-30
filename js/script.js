@@ -105,6 +105,10 @@ function togglePublications() {
 	toggleCollapsibleList("#nm_publication_list", ".nm_publication", "show-more-btn", "Publications", 3, "nm_publications_section", 30);
 }
 
+function toggleVolunteering() {
+	toggleCollapsibleList("#nm_volunteering_container", ".nm_volunteering", "vol-show-more-btn", "Volunteering", 3, "volunteering", 30);
+}
+
 function toggleCertifications() {
 	var btn = document.getElementById("cert-show-more-btn");
 	var expanded = btn && btn.dataset.expanded === "true";
@@ -147,32 +151,6 @@ function linkedIn() {
 		window.open("intent://www.linkedin.com/in/niklas-meissner/#Intent;package=com.linkedin.android;scheme=https;end", '_blank');
 	} else {
 		window.open('https://www.linkedin.com/in/niklas-meissner', '_blank');
-	}
-}
-
-function xing() {
-	if (isIOS()) {
-		window.open("https://www.xing.com/profile/Niklas_Meissner6", '_blank');
-	} else if (isAndroid()) {
-		window.open("intent://www.xing.com/profile/Niklas_Meissner6/#Intent;package=com.xing.android;scheme=https;end", '_blank');
-	} else {
-		window.open('https://www.xing.com/profile/Niklas_Meissner6', '_blank');
-	}
-}
-
-function instagram() {
-	if (isMobile()) {
-		window.open("https://m.instagram.com/nik.meissner/", '_blank');
-	} else {
-		window.open('https://www.instagram.com/nik.meissner/', '_blank');
-	}
-}
-
-function facebook() {
-	if (isMobile()) {
-		window.open("https://m.facebook.com/people/Niklas-Mei%C3%9Fner/100004537065246", '_blank');
-	} else {
-		window.open('https://www.facebook.com/people/Niklas-Mei%C3%9Fner/100004537065246', '_blank');
 	}
 }
 

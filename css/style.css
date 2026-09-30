@@ -448,14 +448,18 @@ nav.deepscroll {
 .nm_academic.hidden {
   display: none;
 }
+.nm_volunteering.hidden {
+  display: none;
+}
 .nm_certificate.hidden {
   display: none;
 }
-/* Shared "show more" button style used by professional, academic, publications & certifications sections */
+/* Shared "show more" button style used by collapsible sections */
 .pbj-button,
 .abj-button,
 .mdc-button,
-.cert-button {
+.cert-button,
+.vol-button {
   background-color: #6e6e6e;
   color: white;
   border: none;
@@ -471,7 +475,8 @@ nav.deepscroll {
 .pbj-button:hover,
 .abj-button:hover,
 .mdc-button:hover,
-.cert-button:hover {
+.cert-button:hover,
+.vol-button:hover {
   background-color: #5a5a5a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
